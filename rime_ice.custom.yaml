@@ -1,8 +1,6 @@
-# Skykey full Rime Ice configuration shared by macOS and Windows.
+# Shared Rime Ice configuration for macOS and Windows.
 # Frontend-specific cloud helpers are installed separately on each platform.
 patch:
-  "schema/name": "雾凇拼音 · Skykey"
-
   # Use the upstream Rime Ice dictionary plus the cross-platform extensions.
   "translator/dictionary": rime_ice
   "translator/user_dict": rime_ice

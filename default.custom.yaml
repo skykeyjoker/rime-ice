@@ -1,4 +1,4 @@
-# Skykey shared defaults. Frontend font and theme remain platform settings.
+# Shared defaults. Frontend font and theme remain platform settings.
 patch:
   schema_list:
     - schema: rime_ice
