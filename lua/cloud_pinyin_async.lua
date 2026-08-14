@@ -1,10 +1,9 @@
--- Asynchronous cloud pinyin shared by macOS Rime frontends.
+-- Asynchronous cloud pinyin for Windows Weasel.
 --
--- Network requests run in cloud_pinyin_async_helper, outside the Rime frontend.
+-- Network requests run in cloud_pinyin_async_helper.exe, outside WeaselServer.
 -- Lua only exchanges small state files and rebuilds the candidate menu after a
--- private F24 event delivered directly to the active Rime engine by the
--- frontend-specific refresh bridge. Selected cloud candidates are explicitly
--- written to the active schema's user dictionary.
+-- private F24 event. Selected cloud candidates are explicitly written to the
+-- active schema's normal user dictionary.
 
 local M = {}
 
@@ -15,7 +14,7 @@ local REFILL_MARKER = "-refill-"
 local REQUEST_FILE = "cloud_pinyin_async.request"
 local RESPONSE_FILE = "cloud_pinyin_async.response"
 local HEARTBEAT_FILE = "cloud_pinyin_async.heartbeat"
-local HELPER_FILE = "cloud_pinyin_async_helper"
+local HELPER_FILE = "cloud_pinyin_async_helper.exe"
 local LOCAL_DUPLICATE_SCAN_LIMIT = 50
 local RESPONSE_MAGIC = "RIME_CLOUD_V1"
 
@@ -222,10 +221,6 @@ local function helper_is_alive()
     return heartbeat and math.abs(os.time() - heartbeat) <= 6
 end
 
-local function shell_quote(value)
-    return "'" .. value:gsub("'", "'\"'\"'") .. "'"
-end
-
 local function ensure_helper()
     if helper_is_alive() then
         return true
@@ -237,16 +232,16 @@ local function ensure_helper()
     end
     last_helper_launch = now
 
-    local helper_path = path(HELPER_FILE)
-    local probe = io.open(helper_path, "rb")
+    local helper_path = path(HELPER_FILE):gsub("/", "\\")
+    local data_path = user_dir:gsub("/", "\\")
+    local probe = io.open(path(HELPER_FILE), "rb")
     if not probe then
         log.error("[cloud_pinyin_async] helper is missing: " .. helper_path)
         return false
     end
     probe:close()
 
-    local command = "/usr/bin/nohup " .. shell_quote(helper_path) ..
-        " " .. shell_quote(user_dir) .. " >/dev/null 2>&1 &"
+    local command = 'cmd.exe /d /c start "" /b "' .. helper_path .. '" "' .. data_path .. '"'
     os.execute(command)
     return true
 end
