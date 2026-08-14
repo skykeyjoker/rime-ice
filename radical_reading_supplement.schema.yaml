@@ -1,0 +1,20 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: radical_reading_supplement
+  name: 拆字权威补充注音（维护构建方案）
+  version: "17.0.0+cns-20260805"
+  author:
+    - Unicode Consortium
+    - Taiwan Ministry of Digital Affairs / CNS11643
+    - Skykey (audited Rime conversion)
+  description: |
+    Readings for radical-pinyin characters that are absent from kMandarin17.
+    Maintenance-only schema for rebuilding the committed reverse database.
+
+translator:
+  dictionary: radical_reading_supplement
+  enable_sentence: false
+  enable_completion: false
+  enable_user_dict: false

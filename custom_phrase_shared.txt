@@ -1,0 +1,56 @@
+# Rime table
+# coding: utf-8
+#@/db_name	custom_phrase_shared.txt
+#@/db_type	tabledb
+#
+# 跨平台共享短语
+#
+# 本文件由 Git 同步并会发布到公开仓库，只能放置适合公开的常用短语。
+# 邮箱、手机号、账号等敏感内容请放在不入库的 custom_phrase_user.txt。
+#
+# 以 Tab 分割：词汇<Tab>编码<Tab>权重
+#
+# 这些字词使用 custom_phrase/initial_quality: 99，会排在普通候选之前，
+# 但不会与其他翻译器互相造词。完整拼音编码也不会参与动态造词。
+#
+# 此行之后不能写注释
+
+噷	hm
+呣	m
+呒	m
+
+有	u	3
+又	u	2
+由	u	1
+
+一	i	4
+以	i	3
+已	i	2
+亦	i	1
+
+一个	ig
+有个	ug
+是一个	sig
+有一个	uig
+有一个	uyig
+有一个	uyige
+有没有	umu
+有没有	umeiu
+又有	uu
+又又又	uuu
+又双叒叕	uuuu
+
+go	go
+Golang	golang
+Hugo	hugo
+goto	goto
+domain	domain
+TODO	todo
+Dota	dota
+main	main
+Amazon	amazon
+NASA	nasa
+gone	gone
+Go程	gocheng
+code	code
+SOHO	soho

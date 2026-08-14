@@ -1,0 +1,1617 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: kaomoji
+version: "2026.05.17"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+# Joy
+(* ^ ω ^)	kmjgx	10
+(´ ∀ ` *)	kmjgx	10
+٩(◕‿◕｡)۶	kmjgx	10
+☆*:.｡.o(≧▽≦)o.｡.:*☆	kmjgx	10
+(o^▽^o)	kmjgx	10
+(⌒▽⌒)☆	kmjgx	10
+<(￣︶￣)>	kmjgx	10
+。.:☆*:･'(*⌒―⌒*)))	kmjgx	10
+ヽ(・∀・)ﾉ	kmjgx	10
+(´｡• ω •｡`)	kmjgx	10
+(￣ω￣)	kmjgx	10
+｀;:゛;｀;･(°ε° )	kmjgx	10
+(o･ω･o)	kmjgx	10
+(＠＾◡＾)	kmjgx	10
+ヽ(*・ω・)ﾉ	kmjgx	10
+(o_ _)ﾉ彡☆	kmjgx	10
+(^人^)	kmjgx	10
+(o´▽`o)	kmjgx	10
+(*´▽`*)	kmjgx	10
+｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡	kmjgx	10
+( ´ ω ` )	kmjgx	10
+(((o(*°▽°*)o)))	kmjgx	10
+(≧◡≦)	kmjgx	10
+(o´∀`o)	kmjgx	10
+(´• ω •`)	kmjgx	10
+(＾▽＾)	kmjgx	10
+(⌒ω⌒)	kmjgx	10
+∑d(°∀°d)	kmjgx	10
+╰(▔∀▔)╯	kmjgx	10
+(─‿‿─)	kmjgx	10
+(*^‿^*)	kmjgx	10
+ヽ(o^ ^o)ﾉ	kmjgx	10
+(✯◡✯)	kmjgx	10
+(◕‿◕)	kmjgx	10
+(*≧ω≦*)	kmjgx	10
+(☆▽☆)	kmjgx	10
+(⌒‿⌒)	kmjgx	10
+＼(≧▽≦)／	kmjgx	10
+ヽ(o＾▽＾o)ノ	kmjgx	10
+☆ ～('▽^人)	kmjgx	10
+(*°▽°*)	kmjgx	10
+٩(｡•́‿•̀｡)۶	kmjgx	10
+(✧ω✧)	kmjgx	10
+ヽ(*⌒▽⌒*)ﾉ	kmjgx	10
+(´｡• ᵕ •｡`)	kmjgx	10
+( ´ ▽ ` )	kmjgx	10
+(￣▽￣)	kmjgx	10
+╰(*´︶`*)╯	kmjgx	10
+ヽ(>∀<☆)ノ	kmjgx	10
+o(≧▽≦)o	kmjgx	10
+(☆ω☆)	kmjgx	10
+(っ˘ω˘ς )	kmjgx	10
+＼(￣▽￣)／	kmjgx	10
+(*¯︶¯*)	kmjgx	10
+＼(＾▽＾)／	kmjgx	10
+٩(◕‿◕)۶	kmjgx	10
+(o˘◡˘o)	kmjgx	10
+\(★ω★)/	kmjgx	10
+\(^ヮ^)/	kmjgx	10
+(〃＾▽＾〃)	kmjgx	10
+(╯✧▽✧)╯	kmjgx	10
+o(>ω<)o	kmjgx	10
+o( ❛ᴗ❛ )o	kmjgx	10
+｡ﾟ(TヮT)ﾟ｡	kmjgx	10
+( ‾́ ◡ ‾́ )	kmjgx	10
+(ﾉ´ヮ`)ﾉ*: ･ﾟ	kmjgx	10
+(b ᵔ▽ᵔ)b	kmjgx	10
+(๑˃ᴗ˂)ﻭ	kmjgx	10
+(๑˘︶˘๑)	kmjgx	10
+( ˙꒳​˙ )	kmjgx	10
+(*꒦ິ꒳꒦ີ)	kmjgx	10
+°˖✧◝(⁰▿⁰)◜✧˖°	kmjgx	10
+(´･ᴗ･ ` )	kmjgx	10
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧	kmjgx	10
+(„• ֊ •„)	kmjgx	10
+(.❛ ᴗ ❛.)	kmjgx	10
+(⁀ᗢ⁀)	kmjgx	10
+(￢‿￢ )	kmjgx	10
+(¬‿¬ )	kmjgx	10
+(*￣▽￣)b	kmjgx	10
+( ˙▿˙ )	kmjgx	10
+(¯▿¯)	kmjgx	10
+( ◕▿◕ )	kmjgx	10
+＼(٥⁀▽⁀ )／	kmjgx	10
+(„• ᴗ •„)	kmjgx	10
+(ᵔ◡ᵔ)	kmjgx	10
+( ´ ▿ ` )	kmjgx	10
+(๑>◡<๑)	kmjgx	10
+( = ⩊ = )	kmjgx	10
+( ´ ꒳ ` )	kmjgx	10
+⸜( ´ ꒳ ` )⸝	kmjgx	10
+⸜(⸝⸝⸝´꒳`⸝⸝⸝)⸝	kmjgx	10
+⸜(*ˊᗜˋ*)⸝	kmjgx	10
+⸜( *ˊᵕˋ* )⸝	kmjgx	10
+(>⩊<)	kmjgx	10
+(ᗒ⩊ᗕ)	kmjgx	10
+(ᵔ⩊ᵔ)	kmjgx	10
+( ᵔ ⩊ ᵔ )	kmjgx	10
+(•⩊•)	kmjgx	10
+( • ⩊ • )	kmjgx	10
+
+(* ^ ω ^)	kmjkaixinx	10
+(´ ∀ ` *)	kmjkaixinx	10
+٩(◕‿◕｡)۶	kmjkaixinx	10
+☆*:.｡.o(≧▽≦)o.｡.:*☆	kmjkaixinx	10
+(o^▽^o)	kmjkaixinx	10
+(⌒▽⌒)☆	kmjkaixinx	10
+<(￣︶￣)>	kmjkaixinx	10
+。.:☆*:･'(*⌒―⌒*)))	kmjkaixinx	10
+ヽ(・∀・)ﾉ	kmjkaixinx	10
+(´｡• ω •｡`)	kmjkaixinx	10
+(￣ω￣)	kmjkaixinx	10
+｀;:゛;｀;･(°ε° )	kmjkaixinx	10
+(o･ω･o)	kmjkaixinx	10
+(＠＾◡＾)	kmjkaixinx	10
+ヽ(*・ω・)ﾉ	kmjkaixinx	10
+(o_ _)ﾉ彡☆	kmjkaixinx	10
+(^人^)	kmjkaixinx	10
+(o´▽`o)	kmjkaixinx	10
+(*´▽`*)	kmjkaixinx	10
+｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡	kmjkaixinx	10
+( ´ ω ` )	kmjkaixinx	10
+(((o(*°▽°*)o)))	kmjkaixinx	10
+(≧◡≦)	kmjkaixinx	10
+(o´∀`o)	kmjkaixinx	10
+(´• ω •`)	kmjkaixinx	10
+(＾▽＾)	kmjkaixinx	10
+(⌒ω⌒)	kmjkaixinx	10
+∑d(°∀°d)	kmjkaixinx	10
+╰(▔∀▔)╯	kmjkaixinx	10
+(─‿‿─)	kmjkaixinx	10
+(*^‿^*)	kmjkaixinx	10
+ヽ(o^ ^o)ﾉ	kmjkaixinx	10
+(✯◡✯)	kmjkaixinx	10
+(◕‿◕)	kmjkaixinx	10
+(*≧ω≦*)	kmjkaixinx	10
+(☆▽☆)	kmjkaixinx	10
+(⌒‿⌒)	kmjkaixinx	10
+＼(≧▽≦)／	kmjkaixinx	10
+ヽ(o＾▽＾o)ノ	kmjkaixinx	10
+☆ ～('▽^人)	kmjkaixinx	10
+(*°▽°*)	kmjkaixinx	10
+٩(｡•́‿•̀｡)۶	kmjkaixinx	10
+(✧ω✧)	kmjkaixinx	10
+ヽ(*⌒▽⌒*)ﾉ	kmjkaixinx	10
+(´｡• ᵕ •｡`)	kmjkaixinx	10
+( ´ ▽ ` )	kmjkaixinx	10
+(￣▽￣)	kmjkaixinx	10
+╰(*´︶`*)╯	kmjkaixinx	10
+ヽ(>∀<☆)ノ	kmjkaixinx	10
+o(≧▽≦)o	kmjkaixinx	10
+(☆ω☆)	kmjkaixinx	10
+(っ˘ω˘ς )	kmjkaixinx	10
+＼(￣▽￣)／	kmjkaixinx	10
+(*¯︶¯*)	kmjkaixinx	10
+＼(＾▽＾)／	kmjkaixinx	10
+٩(◕‿◕)۶	kmjkaixinx	10
+(o˘◡˘o)	kmjkaixinx	10
+\(★ω★)/	kmjkaixinx	10
+\(^ヮ^)/	kmjkaixinx	10
+(〃＾▽＾〃)	kmjkaixinx	10
+(╯✧▽✧)╯	kmjkaixinx	10
+o(>ω<)o	kmjkaixinx	10
+o( ❛ᴗ❛ )o	kmjkaixinx	10
+｡ﾟ(TヮT)ﾟ｡	kmjkaixinx	10
+( ‾́ ◡ ‾́ )	kmjkaixinx	10
+(ﾉ´ヮ`)ﾉ*: ･ﾟ	kmjkaixinx	10
+(b ᵔ▽ᵔ)b	kmjkaixinx	10
+(๑˃ᴗ˂)ﻭ	kmjkaixinx	10
+(๑˘︶˘๑)	kmjkaixinx	10
+( ˙꒳​˙ )	kmjkaixinx	10
+(*꒦ິ꒳꒦ີ)	kmjkaixinx	10
+°˖✧◝(⁰▿⁰)◜✧˖°	kmjkaixinx	10
+(´･ᴗ･ ` )	kmjkaixinx	10
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧	kmjkaixinx	10
+(„• ֊ •„)	kmjkaixinx	10
+(.❛ ᴗ ❛.)	kmjkaixinx	10
+(⁀ᗢ⁀)	kmjkaixinx	10
+(￢‿￢ )	kmjkaixinx	10
+(¬‿¬ )	kmjkaixinx	10
+(*￣▽￣)b	kmjkaixinx	10
+( ˙▿˙ )	kmjkaixinx	10
+(¯▿¯)	kmjkaixinx	10
+( ◕▿◕ )	kmjkaixinx	10
+＼(٥⁀▽⁀ )／	kmjkaixinx	10
+(„• ᴗ •„)	kmjkaixinx	10
+(ᵔ◡ᵔ)	kmjkaixinx	10
+( ´ ▿ ` )	kmjkaixinx	10
+(๑>◡<๑)	kmjkaixinx	10
+( = ⩊ = )	kmjkaixinx	10
+( ´ ꒳ ` )	kmjkaixinx	10
+⸜( ´ ꒳ ` )⸝	kmjkaixinx	10
+⸜(⸝⸝⸝´꒳`⸝⸝⸝)⸝	kmjkaixinx	10
+⸜(*ˊᗜˋ*)⸝	kmjkaixinx	10
+⸜( *ˊᵕˋ* )⸝	kmjkaixinx	10
+(>⩊<)	kmjkaixinx	10
+(ᗒ⩊ᗕ)	kmjkaixinx	10
+(ᵔ⩊ᵔ)	kmjkaixinx	10
+( ᵔ ⩊ ᵔ )	kmjkaixinx	10
+(•⩊•)	kmjkaixinx	10
+( • ⩊ • )	kmjkaixinx	10
+
+(* ^ ω ^)	kmjhappy	10
+(´ ∀ ` *)	kmjhappy	10
+٩(◕‿◕｡)۶	kmjhappy	10
+☆*:.｡.o(≧▽≦)o.｡.:*☆	kmjhappy	10
+(o^▽^o)	kmjhappy	10
+(⌒▽⌒)☆	kmjhappy	10
+<(￣︶￣)>	kmjhappy	10
+。.:☆*:･'(*⌒―⌒*)))	kmjhappy	10
+ヽ(・∀・)ﾉ	kmjhappy	10
+(´｡• ω •｡`)	kmjhappy	10
+(￣ω￣)	kmjhappy	10
+｀;:゛;｀;･(°ε° )	kmjhappy	10
+(o･ω･o)	kmjhappy	10
+(＠＾◡＾)	kmjhappy	10
+ヽ(*・ω・)ﾉ	kmjhappy	10
+(o_ _)ﾉ彡☆	kmjhappy	10
+(^人^)	kmjhappy	10
+(o´▽`o)	kmjhappy	10
+(*´▽`*)	kmjhappy	10
+｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡	kmjhappy	10
+( ´ ω ` )	kmjhappy	10
+(((o(*°▽°*)o)))	kmjhappy	10
+(≧◡≦)	kmjhappy	10
+(o´∀`o)	kmjhappy	10
+(´• ω •`)	kmjhappy	10
+(＾▽＾)	kmjhappy	10
+(⌒ω⌒)	kmjhappy	10
+∑d(°∀°d)	kmjhappy	10
+╰(▔∀▔)╯	kmjhappy	10
+(─‿‿─)	kmjhappy	10
+(*^‿^*)	kmjhappy	10
+ヽ(o^ ^o)ﾉ	kmjhappy	10
+(✯◡✯)	kmjhappy	10
+(◕‿◕)	kmjhappy	10
+(*≧ω≦*)	kmjhappy	10
+(☆▽☆)	kmjhappy	10
+(⌒‿⌒)	kmjhappy	10
+＼(≧▽≦)／	kmjhappy	10
+ヽ(o＾▽＾o)ノ	kmjhappy	10
+☆ ～('▽^人)	kmjhappy	10
+(*°▽°*)	kmjhappy	10
+٩(｡•́‿•̀｡)۶	kmjhappy	10
+(✧ω✧)	kmjhappy	10
+ヽ(*⌒▽⌒*)ﾉ	kmjhappy	10
+(´｡• ᵕ •｡`)	kmjhappy	10
+( ´ ▽ ` )	kmjhappy	10
+(￣▽￣)	kmjhappy	10
+╰(*´︶`*)╯	kmjhappy	10
+ヽ(>∀<☆)ノ	kmjhappy	10
+o(≧▽≦)o	kmjhappy	10
+(☆ω☆)	kmjhappy	10
+(っ˘ω˘ς )	kmjhappy	10
+＼(￣▽￣)／	kmjhappy	10
+(*¯︶¯*)	kmjhappy	10
+＼(＾▽＾)／	kmjhappy	10
+٩(◕‿◕)۶	kmjhappy	10
+(o˘◡˘o)	kmjhappy	10
+\(★ω★)/	kmjhappy	10
+\(^ヮ^)/	kmjhappy	10
+(〃＾▽＾〃)	kmjhappy	10
+(╯✧▽✧)╯	kmjhappy	10
+o(>ω<)o	kmjhappy	10
+o( ❛ᴗ❛ )o	kmjhappy	10
+｡ﾟ(TヮT)ﾟ｡	kmjhappy	10
+( ‾́ ◡ ‾́ )	kmjhappy	10
+(ﾉ´ヮ`)ﾉ*: ･ﾟ	kmjhappy	10
+(b ᵔ▽ᵔ)b	kmjhappy	10
+(๑˃ᴗ˂)ﻭ	kmjhappy	10
+(๑˘︶˘๑)	kmjhappy	10
+( ˙꒳​˙ )	kmjhappy	10
+(*꒦ິ꒳꒦ີ)	kmjhappy	10
+°˖✧◝(⁰▿⁰)◜✧˖°	kmjhappy	10
+(´･ᴗ･ ` )	kmjhappy	10
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧	kmjhappy	10
+(„• ֊ •„)	kmjhappy	10
+(.❛ ᴗ ❛.)	kmjhappy	10
+(⁀ᗢ⁀)	kmjhappy	10
+(￢‿￢ )	kmjhappy	10
+(¬‿¬ )	kmjhappy	10
+(*￣▽￣)b	kmjhappy	10
+( ˙▿˙ )	kmjhappy	10
+(¯▿¯)	kmjhappy	10
+( ◕▿◕ )	kmjhappy	10
+＼(٥⁀▽⁀ )／	kmjhappy	10
+(„• ᴗ •„)	kmjhappy	10
+(ᵔ◡ᵔ)	kmjhappy	10
+( ´ ▿ ` )	kmjhappy	10
+(๑>◡<๑)	kmjhappy	10
+( = ⩊ = )	kmjhappy	10
+( ´ ꒳ ` )	kmjhappy	10
+⸜( ´ ꒳ ` )⸝	kmjhappy	10
+⸜(⸝⸝⸝´꒳`⸝⸝⸝)⸝	kmjhappy	10
+⸜(*ˊᗜˋ*)⸝	kmjhappy	10
+⸜( *ˊᵕˋ* )⸝	kmjhappy	10
+(>⩊<)	kmjhappy	10
+(ᗒ⩊ᗕ)	kmjhappy	10
+(ᵔ⩊ᵔ)	kmjhappy	10
+( ᵔ ⩊ ᵔ )	kmjhappy	10
+(•⩊•)	kmjhappy	10
+( • ⩊ • )	kmjhappy	10
+
+# Love
+(ﾉ´ з `)ノ	kmjxh	10
+(♡μ_μ)	kmjxh	10
+(*^^*)♡	kmjxh	10
+☆⌒ヽ(*'､^*)chu	kmjxh	10
+(♡-_-♡)	kmjxh	10
+(￣ε￣＠)	kmjxh	10
+ヽ(♡‿♡)ノ	kmjxh	10
+( ´ ∀ `)ノ～ ♡	kmjxh	10
+(─‿‿─)♡	kmjxh	10
+(´｡• ᵕ •｡`) ♡	kmjxh	10
+(*♡∀♡)	kmjxh	10
+(｡・//ε//・｡)	kmjxh	10
+(´ ω `♡)	kmjxh	10
+♡( ◡‿◡ )	kmjxh	10
+(◕‿◕)♡	kmjxh	10
+(/▽＼*)｡o○♡	kmjxh	10
+(ღ˘⌣˘ღ)	kmjxh	10
+(♡°▽°♡)	kmjxh	10
+♡(｡- ω -)	kmjxh	10
+♡ ～('▽^人)	kmjxh	10
+(´• ω •`) ♡	kmjxh	10
+(´ ε ` )♡	kmjxh	10
+(´｡• ω •｡`) ♡	kmjxh	10
+( ´ ▽ ` ).｡ｏ♡	kmjxh	10
+╰(*´︶`*)╯♡	kmjxh	10
+(*˘︶˘*).｡.:*♡	kmjxh	10
+(♡˙︶˙♡)	kmjxh	10
+♡＼(￣▽￣)／♡	kmjxh	10
+(≧◡≦) ♡	kmjxh	10
+(⌒▽⌒)♡	kmjxh	10
+(*¯ ³¯*)♡	kmjxh	10
+(っ˘з(˘⌣˘ ) ♡	kmjxh	10
+♡ (˘▽˘>ԅ( ˘⌣˘)	kmjxh	10
+( ˘⌣˘)♡(˘⌣˘ )	kmjxh	10
+(/^-^(^ ^*)/ ♡	kmjxh	10
+٩(♡ε♡)۶	kmjxh	10
+σ(≧ε≦σ) ♡	kmjxh	10
+♡ (⇀ 3 ↼)	kmjxh	10
+♡ (￣З￣)	kmjxh	10
+(❤ω❤)	kmjxh	10
+(˘∀˘)/(μ‿μ) ❤	kmjxh	10
+❤ (ɔˆз(ˆ⌣ˆc)	kmjxh	10
+(´♡‿♡`)	kmjxh	10
+(°◡°♡)	kmjxh	10
+Σ>―(〃°ω°〃)♡→	kmjxh	10
+(´,,•ω•,,)♡	kmjxh	10
+(´꒳`)♡	kmjxh	10
+♡(>ᴗ•)	kmjxh	10
+(❤⩊❤)[=_=](☆ε☆)	kmjxh	10
+( ´ ꒳ ` ) ♡	kmjxh	10
+(˘˘ ♡)	kmjxh	10
+(´ ˘ `).｡oO (♡)	kmjxh	10
+
+(ﾉ´ з `)ノ	kmjxihuan	10
+(♡μ_μ)	kmjxihuan	10
+(*^^*)♡	kmjxihuan	10
+☆⌒ヽ(*'､^*)chu	kmjxihuan	10
+(♡-_-♡)	kmjxihuan	10
+(￣ε￣＠)	kmjxihuan	10
+ヽ(♡‿♡)ノ	kmjxihuan	10
+( ´ ∀ `)ノ～ ♡	kmjxihuan	10
+(─‿‿─)♡	kmjxihuan	10
+(´｡• ᵕ •｡`) ♡	kmjxihuan	10
+(*♡∀♡)	kmjxihuan	10
+(｡・//ε//・｡)	kmjxihuan	10
+(´ ω `♡)	kmjxihuan	10
+♡( ◡‿◡ )	kmjxihuan	10
+(◕‿◕)♡	kmjxihuan	10
+(/▽＼*)｡o○♡	kmjxihuan	10
+(ღ˘⌣˘ღ)	kmjxihuan	10
+(♡°▽°♡)	kmjxihuan	10
+♡(｡- ω -)	kmjxihuan	10
+♡ ～('▽^人)	kmjxihuan	10
+(´• ω •`) ♡	kmjxihuan	10
+(´ ε ` )♡	kmjxihuan	10
+(´｡• ω •｡`) ♡	kmjxihuan	10
+( ´ ▽ ` ).｡ｏ♡	kmjxihuan	10
+╰(*´︶`*)╯♡	kmjxihuan	10
+(*˘︶˘*).｡.:*♡	kmjxihuan	10
+(♡˙︶˙♡)	kmjxihuan	10
+♡＼(￣▽￣)／♡	kmjxihuan	10
+(≧◡≦) ♡	kmjxihuan	10
+(⌒▽⌒)♡	kmjxihuan	10
+(*¯ ³¯*)♡	kmjxihuan	10
+(っ˘з(˘⌣˘ ) ♡	kmjxihuan	10
+♡ (˘▽˘>ԅ( ˘⌣˘)	kmjxihuan	10
+( ˘⌣˘)♡(˘⌣˘ )	kmjxihuan	10
+(/^-^(^ ^*)/ ♡	kmjxihuan	10
+٩(♡ε♡)۶	kmjxihuan	10
+σ(≧ε≦σ) ♡	kmjxihuan	10
+♡ (⇀ 3 ↼)	kmjxihuan	10
+♡ (￣З￣)	kmjxihuan	10
+(❤ω❤)	kmjxihuan	10
+(˘∀˘)/(μ‿μ) ❤	kmjxihuan	10
+❤ (ɔˆз(ˆ⌣ˆc)	kmjxihuan	10
+(´♡‿♡`)	kmjxihuan	10
+(°◡°♡)	kmjxihuan	10
+Σ>―(〃°ω°〃)♡→	kmjxihuan	10
+(´,,•ω•,,)♡	kmjxihuan	10
+(´꒳`)♡	kmjxihuan	10
+♡(>ᴗ•)	kmjxihuan	10
+(❤⩊❤)[=_=](☆ε☆)	kmjxihuan	10
+( ´ ꒳ ` ) ♡	kmjxihuan	10
+(˘˘ ♡)	kmjxihuan	10
+(´ ˘ `).｡oO (♡)	kmjxihuan	10
+
+(ﾉ´ з `)ノ	kmjlove	10
+(♡μ_μ)	kmjlove	10
+(*^^*)♡	kmjlove	10
+☆⌒ヽ(*'､^*)chu	kmjlove	10
+(♡-_-♡)	kmjlove	10
+(￣ε￣＠)	kmjlove	10
+ヽ(♡‿♡)ノ	kmjlove	10
+( ´ ∀ `)ノ～ ♡	kmjlove	10
+(─‿‿─)♡	kmjlove	10
+(´｡• ᵕ •｡`) ♡	kmjlove	10
+(*♡∀♡)	kmjlove	10
+(｡・//ε//・｡)	kmjlove	10
+(´ ω `♡)	kmjlove	10
+♡( ◡‿◡ )	kmjlove	10
+(◕‿◕)♡	kmjlove	10
+(/▽＼*)｡o○♡	kmjlove	10
+(ღ˘⌣˘ღ)	kmjlove	10
+(♡°▽°♡)	kmjlove	10
+♡(｡- ω -)	kmjlove	10
+♡ ～('▽^人)	kmjlove	10
+(´• ω •`) ♡	kmjlove	10
+(´ ε ` )♡	kmjlove	10
+(´｡• ω •｡`) ♡	kmjlove	10
+( ´ ▽ ` ).｡ｏ♡	kmjlove	10
+╰(*´︶`*)╯♡	kmjlove	10
+(*˘︶˘*).｡.:*♡	kmjlove	10
+(♡˙︶˙♡)	kmjlove	10
+♡＼(￣▽￣)／♡	kmjlove	10
+(≧◡≦) ♡	kmjlove	10
+(⌒▽⌒)♡	kmjlove	10
+(*¯ ³¯*)♡	kmjlove	10
+(っ˘з(˘⌣˘ ) ♡	kmjlove	10
+♡ (˘▽˘>ԅ( ˘⌣˘)	kmjlove	10
+( ˘⌣˘)♡(˘⌣˘ )	kmjlove	10
+(/^-^(^ ^*)/ ♡	kmjlove	10
+٩(♡ε♡)۶	kmjlove	10
+σ(≧ε≦σ) ♡	kmjlove	10
+♡ (⇀ 3 ↼)	kmjlove	10
+♡ (￣З￣)	kmjlove	10
+(❤ω❤)	kmjlove	10
+(˘∀˘)/(μ‿μ) ❤	kmjlove	10
+❤ (ɔˆз(ˆ⌣ˆc)	kmjlove	10
+(´♡‿♡`)	kmjlove	10
+(°◡°♡)	kmjlove	10
+Σ>―(〃°ω°〃)♡→	kmjlove	10
+(´,,•ω•,,)♡	kmjlove	10
+(´꒳`)♡	kmjlove	10
+♡(>ᴗ•)	kmjlove	10
+(❤⩊❤)[=_=](☆ε☆)	kmjlove	10
+( ´ ꒳ ` ) ♡	kmjlove	10
+(˘˘ ♡)	kmjlove	10
+(´ ˘ `).｡oO (♡)	kmjlove	10
+
+# Embarrassment
+(⌒_⌒;)	kmjgg	10
+(o^ ^o)	kmjgg	10
+(*/ω＼)	kmjgg	10
+(*/。＼)	kmjgg	10
+(*/_＼)	kmjgg	10
+(*ﾉωﾉ)	kmjgg	10
+(o-_-o)	kmjgg	10
+(*μ_μ)	kmjgg	10
+( ◡‿◡ *)	kmjgg	10
+(ᵔ.ᵔ)	kmjgg	10
+(*ﾉ∀`*)	kmjgg	10
+(//▽//)	kmjgg	10
+(//ω//)	kmjgg	10
+(ノ*°▽°*)	kmjgg	10
+(*^.^*)	kmjgg	10
+(*ﾉ▽ﾉ)	kmjgg	10
+(￣▽￣*)ゞ	kmjgg	10
+(⁄ ⁄•⁄ω⁄•⁄ ⁄)	kmjgg	10
+(*/▽＼*)	kmjgg	10
+(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)	kmjgg	10
+(„ಡωಡ„)	kmjgg	10
+(ง ื▿ ื)ว	kmjgg	10
+( 〃▽〃)	kmjgg	10
+(/▿＼ )	kmjgg	10
+(///￣ ￣///)	kmjgg	10
+
+(⌒_⌒;)	kmjganga	10
+(o^ ^o)	kmjganga	10
+(*/ω＼)	kmjganga	10
+(*/。＼)	kmjganga	10
+(*/_＼)	kmjganga	10
+(*ﾉωﾉ)	kmjganga	10
+(o-_-o)	kmjganga	10
+(*μ_μ)	kmjganga	10
+( ◡‿◡ *)	kmjganga	10
+(ᵔ.ᵔ)	kmjganga	10
+(*ﾉ∀`*)	kmjganga	10
+(//▽//)	kmjganga	10
+(//ω//)	kmjganga	10
+(ノ*°▽°*)	kmjganga	10
+(*^.^*)	kmjganga	10
+(*ﾉ▽ﾉ)	kmjganga	10
+(￣▽￣*)ゞ	kmjganga	10
+(⁄ ⁄•⁄ω⁄•⁄ ⁄)	kmjganga	10
+(*/▽＼*)	kmjganga	10
+(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)	kmjganga	10
+(„ಡωಡ„)	kmjganga	10
+(ง ื▿ ื)ว	kmjganga	10
+( 〃▽〃)	kmjganga	10
+(/▿＼ )	kmjganga	10
+(///￣ ￣///)	kmjganga	10
+
+# Sympathy
+(ノ_<。)ヾ(´ ▽ ` )	kmjaw	10
+｡･ﾟ･(ﾉД`)ヽ(￣ω￣ )	kmjaw	10
+ρ(- ω -、)ヾ(￣ω￣; )	kmjaw	10
+ヽ(￣ω￣(。。 )ゝ	kmjaw	10
+(*´ I `)ﾉﾟ(ﾉД｀ﾟ)ﾟ｡	kmjaw	10
+ヽ(~_~(・_・ )ゝ	kmjaw	10
+(ﾉ_；)ヾ(´ ∀ ` )	kmjaw	10
+(; ω ; )ヾ(´∀`* )	kmjaw	10
+(*´ー)ﾉ(ノд`)	kmjaw	10
+(´-ω-`( _ _ )	kmjaw	10
+(っ´ω`)ﾉ(╥ω╥)	kmjaw	10
+(ｏ・_・)ノ”(ノ_<、)	kmjaw	10
+
+(ノ_<。)ヾ(´ ▽ ` )	kmjanwei	10
+｡･ﾟ･(ﾉД`)ヽ(￣ω￣ )	kmjanwei	10
+ρ(- ω -、)ヾ(￣ω￣; )	kmjanwei	10
+ヽ(￣ω￣(。。 )ゝ	kmjanwei	10
+(*´ I `)ﾉﾟ(ﾉД｀ﾟ)ﾟ｡	kmjanwei	10
+ヽ(~_~(・_・ )ゝ	kmjanwei	10
+(ﾉ_；)ヾ(´ ∀ ` )	kmjanwei	10
+(; ω ; )ヾ(´∀`* )	kmjanwei	10
+(*´ー)ﾉ(ノд`)	kmjanwei	10
+(´-ω-`( _ _ )	kmjanwei	10
+(っ´ω`)ﾉ(╥ω╥)	kmjanwei	10
+(ｏ・_・)ノ”(ノ_<、)	kmjanwei	10
+
+# Dissatisfaction
+(＃＞＜)	kmjbkx	10
+(；⌣̀_⌣́)	kmjbkx	10
+☆ｏ(＞＜；)○	kmjbkx	10
+(￣ ￣|||)	kmjbkx	10
+(；￣Д￣)	kmjbkx	10
+(￣□￣」)	kmjbkx	10
+(＃￣0￣)	kmjbkx	10
+(＃￣ω￣)	kmjbkx	10
+(￢_￢;)	kmjbkx	10
+(＞ｍ＜)	kmjbkx	10
+(」°ロ°)」	kmjbkx	10
+(〃＞＿＜;〃)	kmjbkx	10
+(＾＾＃)	kmjbkx	10
+(︶︹︺)	kmjbkx	10
+(￣ヘ￣)	kmjbkx	10
+<(￣ ﹌ ￣)>	kmjbkx	10
+(￣︿￣)	kmjbkx	10
+(＞﹏＜)	kmjbkx	10
+(--_--)	kmjbkx	10
+凸(￣ヘ￣)	kmjbkx	10
+ヾ( ￣O￣)ツ	kmjbkx	10
+(⇀‸↼‶)	kmjbkx	10
+o(>< )o	kmjbkx	10
+(」＞＜)」	kmjbkx	10
+(ᗒᗣᗕ)՞	kmjbkx	10
+(눈_눈)	kmjbkx	10
+
+(＃＞＜)	kmjbukaixin	10
+(；⌣̀_⌣́)	kmjbukaixin	10
+☆ｏ(＞＜；)○	kmjbukaixin	10
+(￣ ￣|||)	kmjbukaixin	10
+(；￣Д￣)	kmjbukaixin	10
+(￣□￣」)	kmjbukaixin	10
+(＃￣0￣)	kmjbukaixin	10
+(＃￣ω￣)	kmjbukaixin	10
+(￢_￢;)	kmjbukaixin	10
+(＞ｍ＜)	kmjbukaixin	10
+(」°ロ°)」	kmjbukaixin	10
+(〃＞＿＜;〃)	kmjbukaixin	10
+(＾＾＃)	kmjbukaixin	10
+(︶︹︺)	kmjbukaixin	10
+(￣ヘ￣)	kmjbukaixin	10
+<(￣ ﹌ ￣)>	kmjbukaixin	10
+(￣︿￣)	kmjbukaixin	10
+(＞﹏＜)	kmjbukaixin	10
+(--_--)	kmjbukaixin	10
+凸(￣ヘ￣)	kmjbukaixin	10
+ヾ( ￣O￣)ツ	kmjbukaixin	10
+(⇀‸↼‶)	kmjbukaixin	10
+o(>< )o	kmjbukaixin	10
+(」＞＜)」	kmjbukaixin	10
+(ᗒᗣᗕ)՞	kmjbukaixin	10
+(눈_눈)	kmjbukaixin	10
+
+(＃＞＜)	kmjsad	10
+(；⌣̀_⌣́)	kmjsad	10
+☆ｏ(＞＜；)○	kmjsad	10
+(￣ ￣|||)	kmjsad	10
+(；￣Д￣)	kmjsad	10
+(￣□￣」)	kmjsad	10
+(＃￣0￣)	kmjsad	10
+(＃￣ω￣)	kmjsad	10
+(￢_￢;)	kmjsad	10
+(＞ｍ＜)	kmjsad	10
+(」°ロ°)」	kmjsad	10
+(〃＞＿＜;〃)	kmjsad	10
+(＾＾＃)	kmjsad	10
+(︶︹︺)	kmjsad	10
+(￣ヘ￣)	kmjsad	10
+<(￣ ﹌ ￣)>	kmjsad	10
+(￣︿￣)	kmjsad	10
+(＞﹏＜)	kmjsad	10
+(--_--)	kmjsad	10
+凸(￣ヘ￣)	kmjsad	10
+ヾ( ￣O￣)ツ	kmjsad	10
+(⇀‸↼‶)	kmjsad	10
+o(>< )o	kmjsad	10
+(」＞＜)」	kmjsad	10
+(ᗒᗣᗕ)՞	kmjsad	10
+(눈_눈)	kmjsad	10
+
+# Anger
+(＃`Д´)	kmjsq	10
+(`皿´＃)	kmjsq	10
+( ` ω ´ )	kmjsq	10
+ヽ( `д´*)ノ	kmjsq	10
+(・`ω´・)	kmjsq	10
+(`ー´)	kmjsq	10
+ヽ(`⌒´メ)ノ	kmjsq	10
+凸(`△´＃)	kmjsq	10
+( `ε´ )	kmjsq	10
+ψ( ` ∇ ´ )ψ	kmjsq	10
+ヾ(`ヘ´)ﾉﾞ	kmjsq	10
+ヽ(‵﹏´)ノ	kmjsq	10
+(ﾒ` ﾛ ´)	kmjsq	10
+(╬`益´)	kmjsq	10
+┌∩┐(◣_◢)┌∩┐	kmjsq	10
+凸( ` ﾛ ´ )凸	kmjsq	10
+Σ(▼□▼メ)	kmjsq	10
+(°ㅂ°╬)	kmjsq	10
+ψ(▼へ▼メ)～→	kmjsq	10
+(ノ°益°)ノ	kmjsq	10
+(҂ `з´ )	kmjsq	10
+(‡▼益▼)	kmjsq	10
+(҂` ﾛ ´)凸	kmjsq	10
+((╬◣﹏◢))	kmjsq	10
+٩(╬ʘ益ʘ╬)۶	kmjsq	10
+(╬ Ò﹏Ó)	kmjsq	10
+＼＼٩(๑`^´๑)۶／／	kmjsq	10
+(凸ಠ益ಠ)凸	kmjsq	10
+↑_(ΦwΦ)Ψ	kmjsq	10
+←~(Ψ▼ｰ▼)∈	kmjsq	10
+୧((#Φ益Φ#))୨	kmjsq	10
+٩(ఠ益ఠ)۶	kmjsq	10
+(ﾉಥ益ಥ)ﾉ	kmjsq	10
+(≖､≖╬)	kmjsq	10
+
+(＃`Д´)	kmjshengqi	10
+(`皿´＃)	kmjshengqi	10
+( ` ω ´ )	kmjshengqi	10
+ヽ( `д´*)ノ	kmjshengqi	10
+(・`ω´・)	kmjshengqi	10
+(`ー´)	kmjshengqi	10
+ヽ(`⌒´メ)ノ	kmjshengqi	10
+凸(`△´＃)	kmjshengqi	10
+( `ε´ )	kmjshengqi	10
+ψ( ` ∇ ´ )ψ	kmjshengqi	10
+ヾ(`ヘ´)ﾉﾞ	kmjshengqi	10
+ヽ(‵﹏´)ノ	kmjshengqi	10
+(ﾒ` ﾛ ´)	kmjshengqi	10
+(╬`益´)	kmjshengqi	10
+┌∩┐(◣_◢)┌∩┐	kmjshengqi	10
+凸( ` ﾛ ´ )凸	kmjshengqi	10
+Σ(▼□▼メ)	kmjshengqi	10
+(°ㅂ°╬)	kmjshengqi	10
+ψ(▼へ▼メ)～→	kmjshengqi	10
+(ノ°益°)ノ	kmjshengqi	10
+(҂ `з´ )	kmjshengqi	10
+(‡▼益▼)	kmjshengqi	10
+(҂` ﾛ ´)凸	kmjshengqi	10
+((╬◣﹏◢))	kmjshengqi	10
+٩(╬ʘ益ʘ╬)۶	kmjshengqi	10
+(╬ Ò﹏Ó)	kmjshengqi	10
+＼＼٩(๑`^´๑)۶／／	kmjshengqi	10
+(凸ಠ益ಠ)凸	kmjshengqi	10
+↑_(ΦwΦ)Ψ	kmjshengqi	10
+←~(Ψ▼ｰ▼)∈	kmjshengqi	10
+୧((#Φ益Φ#))୨	kmjshengqi	10
+٩(ఠ益ఠ)۶	kmjshengqi	10
+(ﾉಥ益ಥ)ﾉ	kmjshengqi	10
+(≖､≖╬)	kmjshengqi	10
+
+# Sadness
+(ノ_<。)	kmjsx	10
+(-_-)	kmjsx	10
+(´-ω-`)	kmjsx	10
+.･ﾟﾟ･(／ω＼)･ﾟﾟ･.	kmjsx	10
+(μ_μ)	kmjsx	10
+(ﾉД`)	kmjsx	10
+(-ω-、)	kmjsx	10
+。゜゜(´Ｏ`) ゜゜。	kmjsx	10
+o(TヘTo)	kmjsx	10
+( ; ω ; )	kmjsx	10
+(｡╯︵╰｡)	kmjsx	10
+｡･ﾟﾟ*(>д<)*ﾟﾟ･｡	kmjsx	10
+( ﾟ，_ゝ｀)	kmjsx	10
+(个_个)	kmjsx	10
+(╯︵╰,)	kmjsx	10
+｡･ﾟ(ﾟ><ﾟ)ﾟ･｡	kmjsx	10
+( ╥ω╥ )	kmjsx	10
+(╯_╰)	kmjsx	10
+(╥_╥)	kmjsx	10
+.｡･ﾟﾟ･(＞_＜)･ﾟﾟ･｡.	kmjsx	10
+(／ˍ・、)	kmjsx	10
+(ノ_<、)	kmjsx	10
+(╥﹏╥)	kmjsx	10
+｡ﾟ(｡ﾉωヽ｡)ﾟ｡	kmjsx	10
+(つω`｡)	kmjsx	10
+(｡T ω T｡)	kmjsx	10
+(ﾉω･､)	kmjsx	10
+･ﾟ･(｡>ω<｡)･ﾟ･	kmjsx	10
+(T_T)	kmjsx	10
+(>_<)	kmjsx	10
+(っ˘̩╭╮˘̩)っ	kmjsx	10
+｡ﾟ･ (>﹏<) ･ﾟ｡	kmjsx	10
+o(〒﹏〒)o	kmjsx	10
+(｡•́︿•̀｡)	kmjsx	10
+(ಥ﹏ಥ)	kmjsx	10
+(ಡ‸ಡ)	kmjsx	10
+
+(ノ_<。)	kmjshangxin	10
+(-_-)	kmjshangxin	10
+(´-ω-`)	kmjshangxin	10
+.･ﾟﾟ･(／ω＼)･ﾟﾟ･.	kmjshangxin	10
+(μ_μ)	kmjshangxin	10
+(ﾉД`)	kmjshangxin	10
+(-ω-、)	kmjshangxin	10
+。゜゜(´Ｏ`) ゜゜。	kmjshangxin	10
+o(TヘTo)	kmjshangxin	10
+( ; ω ; )	kmjshangxin	10
+(｡╯︵╰｡)	kmjshangxin	10
+｡･ﾟﾟ*(>д<)*ﾟﾟ･｡	kmjshangxin	10
+( ﾟ，_ゝ｀)	kmjshangxin	10
+(个_个)	kmjshangxin	10
+(╯︵╰,)	kmjshangxin	10
+｡･ﾟ(ﾟ><ﾟ)ﾟ･｡	kmjshangxin	10
+( ╥ω╥ )	kmjshangxin	10
+(╯_╰)	kmjshangxin	10
+(╥_╥)	kmjshangxin	10
+.｡･ﾟﾟ･(＞_＜)･ﾟﾟ･｡.	kmjshangxin	10
+(／ˍ・、)	kmjshangxin	10
+(ノ_<、)	kmjshangxin	10
+(╥﹏╥)	kmjshangxin	10
+｡ﾟ(｡ﾉωヽ｡)ﾟ｡	kmjshangxin	10
+(つω`｡)	kmjshangxin	10
+(｡T ω T｡)	kmjshangxin	10
+(ﾉω･､)	kmjshangxin	10
+･ﾟ･(｡>ω<｡)･ﾟ･	kmjshangxin	10
+(T_T)	kmjshangxin	10
+(>_<)	kmjshangxin	10
+(っ˘̩╭╮˘̩)っ	kmjshangxin	10
+｡ﾟ･ (>﹏<) ･ﾟ｡	kmjshangxin	10
+o(〒﹏〒)o	kmjshangxin	10
+(｡•́︿•̀｡)	kmjshangxin	10
+(ಥ﹏ಥ)	kmjshangxin	10
+(ಡ‸ಡ)	kmjshangxin	10
+
+# Pain
+~(>_<~)	kmjtk	10
+☆⌒(> _ <)	kmjtk	10
+☆⌒(>。<)	kmjtk	10
+(☆_@)	kmjtk	10
+(×_×)	kmjtk	10
+(x_x)	kmjtk	10
+(×_×)⌒☆	kmjtk	10
+(x_x)⌒☆	kmjtk	10
+(×﹏×)	kmjtk	10
+☆(＃××)	kmjtk	10
+(＋_＋)	kmjtk	10
+[ ± _ ± ]	kmjtk	10
+٩(× ×)۶	kmjtk	10
+_:(´ཀ`」 ∠):_	kmjtk	10
+(ﾒ﹏ﾒ)	kmjtk	10
+
+~(>_<~)	kmjtongku	10
+☆⌒(> _ <)	kmjtongku	10
+☆⌒(>。<)	kmjtongku	10
+(☆_@)	kmjtongku	10
+(×_×)	kmjtongku	10
+(x_x)	kmjtongku	10
+(×_×)⌒☆	kmjtongku	10
+(x_x)⌒☆	kmjtongku	10
+(×﹏×)	kmjtongku	10
+☆(＃××)	kmjtongku	10
+(＋_＋)	kmjtongku	10
+[ ± _ ± ]	kmjtongku	10
+٩(× ×)۶	kmjtongku	10
+_:(´ཀ`」 ∠):_	kmjtongku	10
+(ﾒ﹏ﾒ)	kmjtongku	10
+
+# Fear
+{{ (>_<) }}	kmjhp	10
+＼(º □ º l|l)/	kmjhp	10
+〣( ºΔº )〣	kmjhp	10
+▓▒░(°◡°)░▒▓	kmjhp	10
+(°□°;)	kmjhp	10
+Σ(°ロ°)!!!	kmjhp	10
+(ノωヽ)	kmjhp	10
+(／。＼)	kmjhp	10
+(ﾉ_ヽ)	kmjhp	10
+..・ヾ(。＞＜)シ	kmjhp	10
+(″ロ゛)	kmjhp	10
+(;;;*_*)	kmjhp	10
+(・人・)	kmjhp	10
+＼(〇_ｏ)／	kmjhp	10
+(/ω＼)	kmjhp	10
+(/_＼)	kmjhp	10
+〜(＞＜)〜	kmjhp	10
+Σ(°△°|||)︴	kmjhp	10
+(((＞＜)))	kmjhp	10
+
+{{ (>_<) }}	kmjhaipa	10
+＼(º □ º l|l)/	kmjhaipa	10
+〣( ºΔº )〣	kmjhaipa	10
+▓▒░(°◡°)░▒▓	kmjhaipa	10
+(°□°;)	kmjhaipa	10
+Σ(°ロ°)!!!	kmjhaipa	10
+(ノωヽ)	kmjhaipa	10
+(／。＼)	kmjhaipa	10
+(ﾉ_ヽ)	kmjhaipa	10
+..・ヾ(。＞＜)シ	kmjhaipa	10
+(″ロ゛)	kmjhaipa	10
+(;;;*_*)	kmjhaipa	10
+(・人・)	kmjhaipa	10
+＼(〇_ｏ)／	kmjhaipa	10
+(/ω＼)	kmjhaipa	10
+(/_＼)	kmjhaipa	10
+〜(＞＜)〜	kmjhaipa	10
+Σ(°△°|||)︴	kmjhaipa	10
+(((＞＜)))	kmjhaipa	10
+
+# Indifference
+ヽ(ー_ー )ノ	kmjwsw	10
+ヽ(´ー` )┌	kmjwsw	10
+┐(‘～` )┌	kmjwsw	10
+ヽ(　￣д￣)ノ	kmjwsw	10
+┐(￣ヘ￣)┌	kmjwsw	10
+ヽ(￣～￣　)ノ	kmjwsw	10
+╮(￣_￣)╭	kmjwsw	10
+ヽ(ˇヘˇ)ノ	kmjwsw	10
+┐(￣～￣)┌	kmjwsw	10
+┐(︶▽︶)┌	kmjwsw	10
+╮(￣～￣)╭	kmjwsw	10
+¯\_(ツ)_/¯	kmjwsw	10
+┐( ´ д ` )┌	kmjwsw	10
+╮(︶︿︶)╭	kmjwsw	10
+┐(￣∀￣)┌	kmjwsw	10
+┐( ˘ ､ ˘ )┌	kmjwsw	10
+╮(︶▽︶)╭	kmjwsw	10
+╮( ˘ ､ ˘ )╭	kmjwsw	10
+┐( ˘_˘ )┌	kmjwsw	10
+╮( ˘_˘ )╭	kmjwsw	10
+┐(￣ヮ￣)┌	kmjwsw	10
+ᕕ( ᐛ )ᕗ	kmjwsw	10
+┐(シ)┌	kmjwsw	10
+
+ヽ(ー_ー )ノ	kmjwusuowei	10
+ヽ(´ー` )┌	kmjwusuowei	10
+┐(‘～` )┌	kmjwusuowei	10
+ヽ(　￣д￣)ノ	kmjwusuowei	10
+┐(￣ヘ￣)┌	kmjwusuowei	10
+ヽ(￣～￣　)ノ	kmjwusuowei	10
+╮(￣_￣)╭	kmjwusuowei	10
+ヽ(ˇヘˇ)ノ	kmjwusuowei	10
+┐(￣～￣)┌	kmjwusuowei	10
+┐(︶▽︶)┌	kmjwusuowei	10
+╮(￣～￣)╭	kmjwusuowei	10
+¯\_(ツ)_/¯	kmjwusuowei	10
+┐( ´ д ` )┌	kmjwusuowei	10
+╮(︶︿︶)╭	kmjwusuowei	10
+┐(￣∀￣)┌	kmjwusuowei	10
+┐( ˘ ､ ˘ )┌	kmjwusuowei	10
+╮(︶▽︶)╭	kmjwusuowei	10
+╮( ˘ ､ ˘ )╭	kmjwusuowei	10
+┐( ˘_˘ )┌	kmjwusuowei	10
+╮( ˘_˘ )╭	kmjwusuowei	10
+┐(￣ヮ￣)┌	kmjwusuowei	10
+ᕕ( ᐛ )ᕗ	kmjwusuowei	10
+┐(シ)┌	kmjwusuowei	10
+
+# Confusion
+(＠_＠)	kmjyh	10
+(・・;)ゞ	kmjyh	10
+Σ(￣。￣ﾉ)	kmjyh	10
+(・・ ) ?	kmjyh	10
+(•ิ_•ิ)?	kmjyh	10
+(◎ ◎)ゞ	kmjyh	10
+(ーー;)	kmjyh	10
+ლ(ಠ_ಠ ლ)	kmjyh	10
+ლ(¯ロ¯"ლ)	kmjyh	10
+(¯ . ¯٥)	kmjyh	10
+(¯ ¯٥)	kmjyh	10
+(・・?)	kmjyh	10
+(??_??)	kmjyh	10
+(⊙.⊙)?	kmjyh	10
+(￣ω￣;)	kmjyh	10
+σ(￣、￣〃)	kmjyh	10
+(￣～￣;)	kmjyh	10
+(-_-;)・・・	kmjyh	10
+┐('～`;)┌	kmjyh	10
+(・_・ヾ	kmjyh	10
+(〃￣ω￣〃ゞ	kmjyh	10
+┐(￣ヘ￣;)┌	kmjyh	10
+(・_・;)	kmjyh	10
+(￣_￣)・・・	kmjyh	10
+╮(￣ω￣;)╭	kmjyh	10
+(¯ . ¯;)	kmjyh	10
+
+(＠_＠)	kmjyihuo	10
+(・・;)ゞ	kmjyihuo	10
+Σ(￣。￣ﾉ)	kmjyihuo	10
+(・・ ) ?	kmjyihuo	10
+(•ิ_•ิ)?	kmjyihuo	10
+(◎ ◎)ゞ	kmjyihuo	10
+(ーー;)	kmjyihuo	10
+ლ(ಠ_ಠ ლ)	kmjyihuo	10
+ლ(¯ロ¯"ლ)	kmjyihuo	10
+(¯ . ¯٥)	kmjyihuo	10
+(¯ ¯٥)	kmjyihuo	10
+(・・?)	kmjyihuo	10
+(??_??)	kmjyihuo	10
+(⊙.⊙)?	kmjyihuo	10
+(￣ω￣;)	kmjyihuo	10
+σ(￣、￣〃)	kmjyihuo	10
+(￣～￣;)	kmjyihuo	10
+(-_-;)・・・	kmjyihuo	10
+┐('～`;)┌	kmjyihuo	10
+(・_・ヾ	kmjyihuo	10
+(〃￣ω￣〃ゞ	kmjyihuo	10
+┐(￣ヘ￣;)┌	kmjyihuo	10
+(・_・;)	kmjyihuo	10
+(￣_￣)・・・	kmjyihuo	10
+╮(￣ω￣;)╭	kmjyihuo	10
+(¯ . ¯;)	kmjyihuo	10
+
+# Doubt
+(￢_￢)	kmjhy	10
+(→_→)	kmjhy	10
+(￢ ￢)	kmjhy	10
+(￢‿￢ )	kmjhy	10
+(¬_¬ )	kmjhy	10
+(←_←)	kmjhy	10
+(¬ ¬ )	kmjhy	10
+(¬‿¬ )	kmjhy	10
+(↼_↼)	kmjhy	10
+(⇀_⇀)	kmjhy	10
+(ᓀ ᓀ)	kmjhy	10
+(„¬ᴗ¬„)	kmjhy	10
+
+(￢_￢)	kmjhuaiyi	10
+(→_→)	kmjhuaiyi	10
+(￢ ￢)	kmjhuaiyi	10
+(￢‿￢ )	kmjhuaiyi	10
+(¬_¬ )	kmjhuaiyi	10
+(←_←)	kmjhuaiyi	10
+(¬ ¬ )	kmjhuaiyi	10
+(¬‿¬ )	kmjhuaiyi	10
+(↼_↼)	kmjhuaiyi	10
+(⇀_⇀)	kmjhuaiyi	10
+(ᓀ ᓀ)	kmjhuaiyi	10
+(„¬ᴗ¬„)	kmjhuaiyi	10
+
+# Surprise
+w(°ｏ°)w	kmjjx	10
+ヽ(°〇°)ﾉ	kmjjx	10
+Σ(O_O)	kmjjx	10
+Σ(°ロ°)	kmjjx	10
+(⊙_⊙)	kmjjx	10
+(o_O)	kmjjx	10
+(O_O;)	kmjjx	10
+(O.O)	kmjjx	10
+(°ロ°) !	kmjjx	10
+(o_O) !	kmjjx	10
+(□_□)	kmjjx	10
+Σ(□_□)	kmjjx	10
+∑(O_O;)	kmjjx	10
+( : ౦ ‸ ౦ : )	kmjjx	10
+
+w(°ｏ°)w	kmjjingxi	10
+ヽ(°〇°)ﾉ	kmjjingxi	10
+Σ(O_O)	kmjjingxi	10
+Σ(°ロ°)	kmjjingxi	10
+(⊙_⊙)	kmjjingxi	10
+(o_O)	kmjjingxi	10
+(O_O;)	kmjjingxi	10
+(O.O)	kmjjingxi	10
+(°ロ°) !	kmjjingxi	10
+(o_O) !	kmjjingxi	10
+(□_□)	kmjjingxi	10
+Σ(□_□)	kmjjingxi	10
+∑(O_O;)	kmjjingxi	10
+( : ౦ ‸ ౦ : )	kmjjingxi	10
+
+# Greeting
+(*・ω・)ﾉ	kmjnh	10
+(￣▽￣)ノ	kmjnh	10
+(°▽°)/	kmjnh	10
+( ´ ∀ ` )ﾉ	kmjnh	10
+(^-^*)/	kmjnh	10
+(＠´ー`)ﾉﾞ	kmjnh	10
+(´• ω •`)ﾉ	kmjnh	10
+( ° ∀ ° )ﾉﾞ	kmjnh	10
+ヾ(*'▽'*)	kmjnh	10
+＼(⌒▽⌒)	kmjnh	10
+ヾ(☆▽☆)	kmjnh	10
+( ´ ▽ ` )ﾉ	kmjnh	10
+(^０^)ノ	kmjnh	10
+~ヾ(・ω・)	kmjnh	10
+(・∀・)ノ	kmjnh	10
+ヾ(・ω・*)	kmjnh	10
+(*°ｰ°)ﾉ	kmjnh	10
+(・_・)ノ	kmjnh	10
+(o´ω`o)ﾉ	kmjnh	10
+( ´ ▽ ` )/	kmjnh	10
+(￣ω￣)/	kmjnh	10
+( ´ ω ` )ノﾞ	kmjnh	10
+(⌒ω⌒)ﾉ	kmjnh	10
+(o^ ^o)/	kmjnh	10
+(≧▽≦)/	kmjnh	10
+(✧∀✧)/	kmjnh	10
+(o´▽`o)ﾉ	kmjnh	10
+(￣▽￣)/	kmjnh	10
+
+(*・ω・)ﾉ	kmjnihao	10
+(￣▽￣)ノ	kmjnihao	10
+(°▽°)/	kmjnihao	10
+( ´ ∀ ` )ﾉ	kmjnihao	10
+(^-^*)/	kmjnihao	10
+(＠´ー`)ﾉﾞ	kmjnihao	10
+(´• ω •`)ﾉ	kmjnihao	10
+( ° ∀ ° )ﾉﾞ	kmjnihao	10
+ヾ(*'▽'*)	kmjnihao	10
+＼(⌒▽⌒)	kmjnihao	10
+ヾ(☆▽☆)	kmjnihao	10
+( ´ ▽ ` )ﾉ	kmjnihao	10
+(^０^)ノ	kmjnihao	10
+~ヾ(・ω・)	kmjnihao	10
+(・∀・)ノ	kmjnihao	10
+ヾ(・ω・*)	kmjnihao	10
+(*°ｰ°)ﾉ	kmjnihao	10
+(・_・)ノ	kmjnihao	10
+(o´ω`o)ﾉ	kmjnihao	10
+( ´ ▽ ` )/	kmjnihao	10
+(￣ω￣)/	kmjnihao	10
+( ´ ω ` )ノﾞ	kmjnihao	10
+(⌒ω⌒)ﾉ	kmjnihao	10
+(o^ ^o)/	kmjnihao	10
+(≧▽≦)/	kmjnihao	10
+(✧∀✧)/	kmjnihao	10
+(o´▽`o)ﾉ	kmjnihao	10
+(￣▽￣)/	kmjnihao	10
+
+# Hugging
+(づ￣ ³￣)づ	kmjyb	10
+(つ≧▽≦)つ	kmjyb	10
+(つ✧ω✧)つ	kmjyb	10
+(づ ◕‿◕ )づ	kmjyb	10
+(⊃｡•́‿•̀｡)⊃	kmjyb	10
+(つ . •́ _ʖ •̀ .)つ	kmjyb	10
+(っಠ‿ಠ)っ	kmjyb	10
+(づ◡﹏◡)づ	kmjyb	10
+⊂(´• ω •`⊂)	kmjyb	10
+⊂(･ω･*⊂)	kmjyb	10
+⊂(￣▽￣)⊃	kmjyb	10
+⊂( ´ ▽ ` )⊃	kmjyb	10
+( ~*-*)~	kmjyb	10
+(ノ= ⩊ = )ノ	kmjyb	10
+(っ ᵔ◡ᵔ)っ	kmjyb	10
+(っ╹ᆺ╹)っ	kmjyb	10
+
+(づ￣ ³￣)づ	kmjyongbao	10
+(つ≧▽≦)つ	kmjyongbao	10
+(つ✧ω✧)つ	kmjyongbao	10
+(づ ◕‿◕ )づ	kmjyongbao	10
+(⊃｡•́‿•̀｡)⊃	kmjyongbao	10
+(つ . •́ _ʖ •̀ .)つ	kmjyongbao	10
+(っಠ‿ಠ)っ	kmjyongbao	10
+(づ◡﹏◡)づ	kmjyongbao	10
+⊂(´• ω •`⊂)	kmjyongbao	10
+⊂(･ω･*⊂)	kmjyongbao	10
+⊂(￣▽￣)⊃	kmjyongbao	10
+⊂( ´ ▽ ` )⊃	kmjyongbao	10
+( ~*-*)~	kmjyongbao	10
+(ノ= ⩊ = )ノ	kmjyongbao	10
+(っ ᵔ◡ᵔ)っ	kmjyongbao	10
+(っ╹ᆺ╹)っ	kmjyongbao	10
+
+# Winking
+(^_~)	kmjwink	10
+( ﾟｏ⌒)	kmjwink	10
+(^_-)≡☆	kmjwink	10
+(^ω~)	kmjwink	10
+(>ω^)	kmjwink	10
+(~人^)	kmjwink	10
+(^_-)	kmjwink	10
+( -_・)	kmjwink	10
+(^_<)〜☆	kmjwink	10
+(^人<)〜☆	kmjwink	10
+☆⌒(≧▽​° )	kmjwink	10
+☆⌒(ゝ。∂)	kmjwink	10
+(^_<)	kmjwink	10
+(^_−)☆	kmjwink	10
+(･ω<)☆	kmjwink	10
+(^.~)☆	kmjwink	10
+(^.~)	kmjwink	10
+(｡•̀ᴗ-)✧	kmjwink	10
+(>ᴗ•)	kmjwink	10
+☆(>ᴗ•)	kmjwink	10
+
+# Apologizing
+m(_ _)m	kmjdbq	10
+(シ_ _)シ	kmjdbq	10
+m(. .)m	kmjdbq	10
+<(_ _)>	kmjdbq	10
+人(_ _*)	kmjdbq	10
+(*_ _)人	kmjdbq	10
+m(_ _;m)	kmjdbq	10
+(m;_ _)m	kmjdbq	10
+(シ. .)シ	kmjdbq	10
+
+m(_ _)m	kmjduibuqi	10
+(シ_ _)シ	kmjduibuqi	10
+m(. .)m	kmjduibuqi	10
+<(_ _)>	kmjduibuqi	10
+人(_ _*)	kmjduibuqi	10
+(*_ _)人	kmjduibuqi	10
+m(_ _;m)	kmjduibuqi	10
+(m;_ _)m	kmjduibuqi	10
+(シ. .)シ	kmjduibuqi	10
+
+m(_ _)m	kmjsorry	10
+(シ_ _)シ	kmjsorry	10
+m(. .)m	kmjsorry	10
+<(_ _)>	kmjsorry	10
+人(_ _*)	kmjsorry	10
+(*_ _)人	kmjsorry	10
+m(_ _;m)	kmjsorry	10
+(m;_ _)m	kmjsorry	10
+(シ. .)シ	kmjsorry	10
+
+# Nosebleeding
+(*￣ii￣)	kmjlbx	10
+(￣ﾊ￣*)	kmjlbx	10
+\(￣ﾊ￣)	kmjlbx	10
+(＾་།＾)	kmjlbx	10
+(＾〃＾)	kmjlbx	10
+(￣ ¨ヽ￣)	kmjlbx	10
+(￣ ;￣)	kmjlbx	10
+(￣ ;;￣)	kmjlbx	10
+
+(*￣ii￣)	kmjliubixie	10
+(￣ﾊ￣*)	kmjliubixie	10
+\(￣ﾊ￣)	kmjliubixie	10
+(＾་།＾)	kmjliubixie	10
+(＾〃＾)	kmjliubixie	10
+(￣ ¨ヽ￣)	kmjliubixie	10
+(￣ ;￣)	kmjliubixie	10
+(￣ ;;￣)	kmjliubixie	10
+
+# Hiding
+|･ω･)	kmjduo	10
+ﾍ(･_|	kmjduo	10
+|ω･)ﾉ	kmjduo	10
+ヾ(･|	kmjduo	10
+|д･)	kmjduo	10
+|_￣))	kmjduo	10
+|▽//)	kmjduo	10
+# 与下方同码条目重复，保留一份有效定义。
+┬┴┬┴┤･ω･)ﾉ	kmjduo	10
+┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴	kmjduo	10
+┬┴┬┴┤(･_├┬┴┬┴	kmjduo	10
+|_・)	kmjduo	10
+|･д･)ﾉ	kmjduo	10
+|ʘ‿ʘ)╯	kmjduo	10
+
+# Running
+☆ﾐ(o*･ω･)ﾉ	kmjpao	10
+C= C= C= C= C=┌(;・ω・)┘	kmjpao	10
+─=≡Σ((( つ＞＜)つ	kmjpao	10
+ε=ε=ε=ε=┌(;￣▽￣)┘	kmjpao	10
+ε=ε=┌( >_<)┘	kmjpao	10
+C= C= C= C=┌( `ー´)┘	kmjpao	10
+ε===(っ≧ω≦)っ	kmjpao	10
+ヽ(￣д￣;)ノ=3=3=3	kmjpao	10
+。。。ミヽ(。＞＜)ノ	kmjpao	10
+
+☆ﾐ(o*･ω･)ﾉ	kmjrun	10
+C= C= C= C= C=┌(;・ω・)┘	kmjrun	10
+─=≡Σ((( つ＞＜)つ	kmjrun	10
+ε=ε=ε=ε=┌(;￣▽￣)┘	kmjrun	10
+ε=ε=┌( >_<)┘	kmjrun	10
+C= C= C= C=┌( `ー´)┘	kmjrun	10
+ε===(っ≧ω≦)っ	kmjrun	10
+ヽ(￣д￣;)ノ=3=3=3	kmjrun	10
+。。。ミヽ(。＞＜)ノ	kmjrun	10
+
+# Sleeping
+[(－－)]..zzZ	kmjsj	10
+(－_－) zzZ	kmjsj	10
+(∪｡∪)｡｡｡zzZ	kmjsj	10
+(－ω－) zzZ	kmjsj	10
+(￣o￣) zzZZzzZZ	kmjsj	10
+(( _ _ ))..zzzZZ	kmjsj	10
+(￣ρ￣)..zzZZ	kmjsj	10
+(－.－)...zzz	kmjsj	10
+(＿ ＿*) Z z z	kmjsj	10
+(x . x) ~~zzZ	kmjsj	10
+
+[(－－)]..zzZ	kmjshuijiao	10
+(－_－) zzZ	kmjshuijiao	10
+(∪｡∪)｡｡｡zzZ	kmjshuijiao	10
+(－ω－) zzZ	kmjshuijiao	10
+(￣o￣) zzZZzzZZ	kmjshuijiao	10
+(( _ _ ))..zzzZZ	kmjshuijiao	10
+(￣ρ￣)..zzZZ	kmjshuijiao	10
+(－.－)...zzz	kmjshuijiao	10
+(＿ ＿*) Z z z	kmjshuijiao	10
+(x . x) ~~zzZ	kmjshuijiao	10
+
+[(－－)]..zzZ	kmjsleep	10
+(－_－) zzZ	kmjsleep	10
+(∪｡∪)｡｡｡zzZ	kmjsleep	10
+(－ω－) zzZ	kmjsleep	10
+(￣o￣) zzZZzzZZ	kmjsleep	10
+(( _ _ ))..zzzZZ	kmjsleep	10
+(￣ρ￣)..zzZZ	kmjsleep	10
+(－.－)...zzz	kmjsleep	10
+(＿ ＿*) Z z z	kmjsleep	10
+(x . x) ~~zzZ	kmjsleep	10
+
+# Cat
+(=^･ω･^=)	kmjmao	10
+(=^･ｪ･^=)	kmjmao	10
+(=①ω①=)	kmjmao	10
+( =ω=)..nyaa	kmjmao	10
+(= ; ｪ ; =)	kmjmao	10
+(=`ω´=)	kmjmao	10
+(=^‥^=)	kmjmao	10
+( =ノωヽ=)	kmjmao	10
+(=⌒‿‿⌒=)	kmjmao	10
+(=^ ◡ ^=)	kmjmao	10
+(=^-ω-^=)	kmjmao	10
+ヾ(=`ω´=)ノ”	kmjmao	10
+(＾• ω •＾)	kmjmao	10
+(/ =ω=)/	kmjmao	10
+ฅ(•ㅅ•❀)ฅ	kmjmao	10
+ฅ(• ɪ •)ฅ	kmjmao	10
+ଲ(ⓛ ω ⓛ)ଲ	kmjmao	10
+(^=◕ᴥ◕=^)	kmjmao	10
+( =ω= )	kmjmao	10
+(^˵◕ω◕˵^)	kmjmao	10
+(^◔ᴥ◔^)	kmjmao	10
+(^◕ᴥ◕^)	kmjmao	10
+ต(=ω=)ต	kmjmao	10
+( Φ ω Φ )	kmjmao	10
+ฅ(^◕ᴥ◕^)ฅ	kmjmao	10
+
+(=^･ω･^=)	kmjcat	10
+(=^･ｪ･^=)	kmjcat	10
+(=①ω①=)	kmjcat	10
+( =ω=)..nyaa	kmjcat	10
+(= ; ｪ ; =)	kmjcat	10
+(=`ω´=)	kmjcat	10
+(=^‥^=)	kmjcat	10
+( =ノωヽ=)	kmjcat	10
+(=⌒‿‿⌒=)	kmjcat	10
+(=^ ◡ ^=)	kmjcat	10
+(=^-ω-^=)	kmjcat	10
+ヾ(=`ω´=)ノ”	kmjcat	10
+(＾• ω •＾)	kmjcat	10
+(/ =ω=)/	kmjcat	10
+ฅ(•ㅅ•❀)ฅ	kmjcat	10
+ฅ(• ɪ •)ฅ	kmjcat	10
+ଲ(ⓛ ω ⓛ)ଲ	kmjcat	10
+(^=◕ᴥ◕=^)	kmjcat	10
+( =ω= )	kmjcat	10
+(^˵◕ω◕˵^)	kmjcat	10
+(^◔ᴥ◔^)	kmjcat	10
+(^◕ᴥ◕^)	kmjcat	10
+ต(=ω=)ต	kmjcat	10
+( Φ ω Φ )	kmjcat	10
+ฅ(^◕ᴥ◕^)ฅ	kmjcat	10
+
+# Bear
+ʕ ᵔᴥᵔ ʔ	kmjxiong	10
+ʕ •ᴥ• ʔ	kmjxiong	10
+ʕ •̀ ω •́ ʔ	kmjxiong	10
+ʕ •̀ o •́ ʔ	kmjxiong	10
+ʕಠᴥಠʔ	kmjxiong	10
+( ´(ｴ)ˋ )	kmjxiong	10
+(*￣(ｴ)￣*)	kmjxiong	10
+ヽ(￣(ｴ)￣)ﾉ	kmjxiong	10
+(／￣(ｴ)￣)／	kmjxiong	10
+(￣(ｴ)￣)	kmjxiong	10
+ヽ( ˋ(ｴ)´ )ﾉ	kmjxiong	10
+⊂(￣(ｴ)￣)⊃	kmjxiong	10
+(／(ｴ)＼)	kmjxiong	10
+⊂(´(ェ)ˋ)⊃	kmjxiong	10
+(/-(ｴ)-＼)	kmjxiong	10
+(/°(ｴ)°)/	kmjxiong	10
+
+ʕ ᵔᴥᵔ ʔ	kmjbear	10
+ʕ •ᴥ• ʔ	kmjbear	10
+ʕ •̀ ω •́ ʔ	kmjbear	10
+ʕ •̀ o •́ ʔ	kmjbear	10
+ʕಠᴥಠʔ	kmjbear	10
+( ´(ｴ)ˋ )	kmjbear	10
+(*￣(ｴ)￣*)	kmjbear	10
+ヽ(￣(ｴ)￣)ﾉ	kmjbear	10
+(／￣(ｴ)￣)／	kmjbear	10
+(￣(ｴ)￣)	kmjbear	10
+ヽ( ˋ(ｴ)´ )ﾉ	kmjbear	10
+⊂(￣(ｴ)￣)⊃	kmjbear	10
+(／(ｴ)＼)	kmjbear	10
+⊂(´(ェ)ˋ)⊃	kmjbear	10
+(/-(ｴ)-＼)	kmjbear	10
+(/°(ｴ)°)/	kmjbear	10
+
+# Dog
+U・ᴥ・U	kmjgou	10
+∪＾ェ＾∪	kmjgou	10
+∪･ω･∪	kmjgou	10
+∪￣-￣∪	kmjgou	10
+∪･ｪ･∪	kmjgou	10
+Ｕ^皿^Ｕ	kmjgou	10
+ＵＴｪＴＵ	kmjgou	10
+U^ｪ^U	kmjgou	10
+V●ᴥ●V	kmjgou	10
+
+U・ᴥ・U	kmjdog	10
+∪＾ェ＾∪	kmjdog	10
+∪･ω･∪	kmjdog	10
+∪￣-￣∪	kmjdog	10
+∪･ｪ･∪	kmjdog	10
+Ｕ^皿^Ｕ	kmjdog	10
+ＵＴｪＴＵ	kmjdog	10
+U^ｪ^U	kmjdog	10
+V●ᴥ●V	kmjdog	10
+
+# Rabbit
+／(＞×＜)＼	kmjtuzi	10
+／(˃ᆺ˂)＼	kmjtuzi	10
+૮ ˶ᵔ ᵕ ᵔ˶ ა	kmjtuzi	10
+૮₍ ˶• ༝ •˶ ₎ა	kmjtuzi	10
+／(≧ x ≦)＼	kmjtuzi	10
+／(･ × ･)＼	kmjtuzi	10
+／(=´x`=)＼	kmjtuzi	10
+／(^ x ^)＼	kmjtuzi	10
+／(=･ x ･=)＼	kmjtuzi	10
+／(^ × ^)＼	kmjtuzi	10
+
+／(＞×＜)＼	kmjrabbit	10
+／(˃ᆺ˂)＼	kmjrabbit	10
+૮ ˶ᵔ ᵕ ᵔ˶ ა	kmjrabbit	10
+૮₍ ˶• ༝ •˶ ₎ა	kmjrabbit	10
+／(≧ x ≦)＼	kmjrabbit	10
+／(･ × ･)＼	kmjrabbit	10
+／(=´x`=)＼	kmjrabbit	10
+／(^ x ^)＼	kmjrabbit	10
+／(=･ x ･=)＼	kmjrabbit	10
+／(^ × ^)＼	kmjrabbit	10
+
+# Pig
+( ´(00)ˋ )	kmjzhu	10
+(￣(ω)￣)	kmjzhu	10
+ヽ( ˋ(00)´ )ノ	kmjzhu	10
+( ´(oo)ˋ )	kmjzhu	10
+＼(￣(oo)￣)／	kmjzhu	10
+｡ﾟ(ﾟ´(00)`ﾟ)ﾟ｡	kmjzhu	10
+(￣(00)￣)	kmjzhu	10
+(ˆ(oo)ˆ)	kmjzhu	10
+
+( ´(00)ˋ )	kmgpig	10
+(￣(ω)￣)	kmgpig	10
+ヽ( ˋ(00)´ )ノ	kmgpig	10
+( ´(oo)ˋ )	kmgpig	10
+＼(￣(oo)￣)／	kmgpig	10
+｡ﾟ(ﾟ´(00)`ﾟ)ﾟ｡	kmgpig	10
+(￣(00)￣)	kmgpig	10
+(ˆ(oo)ˆ)	kmgpig	10
+
+# Bird
+(￣Θ￣)	kmjniao	10
+(`･Θ･´)	kmjniao	10
+( ˋ Θ ´ )	kmjniao	10
+(◉Θ◉)	kmjniao	10
+＼( ˋ Θ ´ )／	kmjniao	10
+(･θ･)	kmjniao	10
+(・Θ・)	kmjniao	10
+ヾ(￣◇￣)ノ〃	kmjniao	10
+(･Θ･)	kmjniao	10
+
+(￣Θ￣)	kmgbird	10
+(`･Θ･´)	kmgbird	10
+( ˋ Θ ´ )	kmgbird	10
+(◉Θ◉)	kmgbird	10
+＼( ˋ Θ ´ )／	kmgbird	10
+(･θ･)	kmgbird	10
+(・Θ・)	kmgbird	10
+ヾ(￣◇￣)ノ〃	kmgbird	10
+(･Θ･)	kmgbird	10
+
+# Fish
+(°)#))<<	kmgyu	10
+<・ )))><<	kmgyu	10
+ζ°)))彡	kmgyu	10
+>°))))彡	kmgyu	10
+(°))<<	kmgyu	10
+>^)))<～～	kmgyu	10
+≧( ° ° )≦	kmgyu	10
+
+(°)#))<<	kmjfish	10
+<・ )))><<	kmjfish	10
+ζ°)))彡	kmjfish	10
+>°))))彡	kmjfish	10
+(°))<<	kmjfish	10
+>^)))<～～	kmjfish	10
+≧( ° ° )≦	kmjfish	10
+
+# Friends
+ヾ(・ω・)メ(・ω・)ノ	kmjfriend	10
+ヽ(∀° )人( °∀)ノ	kmjfriend	10
+ヽ( ⌒o⌒)人(⌒-⌒ )ﾉ	kmjfriend	10
+(*^ω^)八(⌒▽⌒)八(-‿‿- )ヽ	kmjfriend	10
+＼(＾∀＾)メ(＾∀＾)ノ	kmjfriend	10
+ヾ(￣ー￣(≧ω≦*)ゝ	kmjfriend	10
+ヽ( ⌒ω⌒)人(=^‥^= )ﾉ	kmjfriend	10
+ヽ(≧◡≦)八(o^ ^o)ノ	kmjfriend	10
+(*・∀・)爻(・∀・*)	kmjfriend	10
+｡*:☆(・ω・人・ω・)｡:゜☆｡	kmjfriend	10
+o(^^o)(o^^o)(o^^o)(o^^)o	kmjfriend	10
+(((￣(￣(￣▽￣)￣)￣)))	kmjfriend	10
+(°(°ω(°ω°(☆ω☆)°ω°)ω°)°)	kmjfriend	10
+ヾ(・ω・`)ノヾ(´・ω・)ノ゛	kmjfriend	10
+Ψ( `∀)(∀´ )Ψ	kmjfriend	10
+(っ˘▽˘)(˘▽˘)˘▽˘ς)	kmjfriend	10
+(((*°▽°*)八(*°▽°*)))	kmjfriend	10
+☆ヾ(*´・∀・)ﾉヾ(・∀・`*)ﾉ☆	kmjfriend	10
+(*＾ω＾)人(＾ω＾*)	kmjfriend	10
+٩(๑･ิᴗ･ิ)۶٩(･ิᴗ･ิ๑)۶	kmjfriend	10
+(☞°ヮ°)☞ ☜(°ヮ°☜)	kmjfriend	10
+＼(▽￣ \ (￣▽￣) / ￣▽)／	kmjfriend	10
+\( ˙▿˙ )/\( ˙▿˙ )/	kmjfriend	10
+
+# Enemies
+ヽ( ･∀･)ﾉ_θ彡☆Σ(ノ `Д´)ノ	kmjenemy	10
+(*´∇`)┌θ☆(ﾉ>_<)ﾉ	kmjenemy	10
+( ￣ω￣)ノﾞ⌒☆ﾐ(o _ _)o	kmjenemy	10
+(*`0´)θ☆(メ°皿°)ﾉ	kmjenemy	10
+(o¬‿¬o )...☆ﾐ(*x_x)	kmjenemy	10
+(╬￣皿￣)=○＃(￣#)３￣)	kmjenemy	10
+(; -_-)――――――C<―_-)	kmjenemy	10
+＜( ￣︿￣)︵θ︵θ︵☆(＞口＜－)	kmjenemy	10
+(￣ε(#￣)☆╰╮o(￣▽￣///)	kmjenemy	10
+ヽ(>_<ヽ) ―⊂|=0ヘ(^‿^ )	kmjenemy	10
+ヘ(>_<ヘ) ￢o(￣‿￣ﾒ)	kmjenemy	10
+,,((( ￣□)_／ ＼_(○￣ ))),,	kmjenemy	10
+(҂` ﾛ ´)︻デ═一 ＼(º □ º l|l)/	kmjenemy	10
+(╯°Д°)╯︵ /(.□ . ＼)	kmjenemy	10
+(¬_¬'')ԅ(￣ε￣ԅ)	kmjenemy	10
+/( .□.)＼ ︵╰(°益°)╯︵ /(.□. /)	kmjenemy	10
+(ﾉ-.-)ﾉ….((((((((((((●~* ( >_<)	kmjenemy	10
+!!(ﾒ￣ ￣)_θ☆°0°)/	kmjenemy	10
+(`⌒*)O-(`⌒´Q)	kmjenemy	10
+(((ง’ω’)و三 ง’ω’)ڡ≡　☆⌒ﾐ((x_x)	kmjenemy	10
+(งಠ_ಠ)ง　σ( •̀ ω •́ σ)	kmjenemy	10
+(っ•﹏•)っ ✴==≡눈٩(`皿´҂)ง	kmjenemy	10
+(｢• ω •)｢ (⌒ω⌒`)	kmjenemy	10
+( °ᴗ°)~ð (/❛o❛\)	kmjenemy	10
+
+# Weapons
+( ・∀・)・・・--------☆	kmjweapon	10
+(/-_・)/D・・・・・------ →	kmjweapon	10
+(^ω^)ノﾞ(((((((((●～*	kmjweapon	10
+( -ω-)／占~~~~~	kmjweapon	10
+(/・・)ノ　　 (( く ((へ	kmjweapon	10
+―⊂|=0ヘ(^^ )	kmjweapon	10
+○∞∞∞∞ヽ(^ー^ )	kmjweapon	10
+(; ・_・)――――C	kmjweapon	10
+(ಠ o ಠ)¤=[]:::::>	kmjweapon	10
+(*＾＾)/~~~~~~~~~~◎	kmjweapon	10
+￢o(￣-￣ﾒ)	kmjweapon	10
+―(T_T)→	kmjweapon	10
+((( ￣□)_／	kmjweapon	10
+(ﾒ` ﾛ ´)︻デ═一	kmjweapon	10
+( ´-ω･)︻┻┳══━一	kmjweapon	10
+(ﾒ￣▽￣)︻┳═一	kmjweapon	10
+✴==≡눈٩(`皿´҂)ง	kmjweapon	10
+Q(`⌒´Q)	kmjweapon	10
+
+# Magic
+(ノ ˘_˘)ノ　ζ|||ζ　ζ|||ζ　ζ|||ζ	kmjmagic	10
+(ﾉ≧∀≦)ﾉ ‥…━━━★	kmjmagic	10
+(ﾉ>ω<)ﾉ :｡･:*:･ﾟ’★,｡･:*:･ﾟ’☆	kmjmagic	10
+(ノ°∀°)ノ⌒･*:.｡. .｡.:*･゜ﾟ･*☆	kmjmagic	10
+╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ	kmjmagic	10
+(＃￣□￣)o━∈・・━━━━☆	kmjmagic	10
+(⊃｡•́‿•̀｡)⊃━✿✿✿✿✿✿	kmjmagic	10
+(∩ᄑ_ᄑ)⊃━☆ﾟ*･｡*･:≡( ε:)	kmjmagic	10
+(/￣ー￣)/~~☆’.･.･:★’.･.･:☆	kmjmagic	10
+(∩` ﾛ ´)⊃━炎炎炎炎炎	kmjmagic	10
+
+# Food
+(っ˘ڡ˘ς)	kmjfood	10
+( o˘◡˘o) ┌iii┐	kmjfood	10
+(　’ω’)旦~~	kmjfood	10
+( ˘▽˘)っ♨	kmjfood	10
+♨o(>_<)o♨	kmjfood	10
+( ・ω・)o-{{[〃]}}	kmjfood	10
+(　・ω・)⊃-[二二]	kmjfood	10
+( ・・)つ―{}@{}@{}-	kmjfood	10
+( ・・)つ-●●●	kmjfood	10
+(*´ー`)旦 旦(￣ω￣*)	kmjfood	10
+(*´з`)口ﾟ｡ﾟ口(・∀・ )	kmjfood	10
+( o^ ^o)且 且(´ω`*)	kmjfood	10
+( ￣▽￣)[] [](≧▽≦ )	kmjfood	10
+( *^^)o∀*∀o(^^* )	kmjfood	10
+( ^^)_旦~~　 ~~U_(^^ )	kmjfood	10
+(*￣▽￣)旦 且(´∀`*)	kmjfood	10
+-●●●-ｃ(・・ )	kmjfood	10
+( ・・)つ―●○◎-	kmjfood	10
+(￣﹃￣)	kmjfood	10
+(๑ᵔ⤙ᵔ๑)	kmjfood	10
+(´ᵔ⤙ᵔ`)	kmjfood	10
+
+# Music
+ヾ(´〇`)ﾉ♪♪♪	kmjmusic	10
+ヘ(￣ω￣ヘ)	kmjmusic	10
+(〜￣▽￣)〜	kmjmusic	10
+〜(￣▽￣〜)	kmjmusic	10
+ヽ(o´∀`)ﾉ♪♬	kmjmusic	10
+(ﾉ≧∀≦)ﾉ	kmjmusic	10
+♪ヽ(^^ヽ)♪	kmjmusic	10
+♪(/_ _ )/♪	kmjmusic	10
+♪♬((d⌒ω⌒b))♬♪	kmjmusic	10
+└(￣-￣└))	kmjmusic	10
+((┘￣ω￣)┘	kmjmusic	10
+√(￣‥￣√)	kmjmusic	10
+└(＾＾)┐	kmjmusic	10
+┌(＾＾)┘	kmjmusic	10
+＼(￣▽￣)＼	kmjmusic	10
+／(￣▽￣)／	kmjmusic	10
+(￣▽￣)/♫•*¨*•.¸¸♪	kmjmusic	10
+(^_^♪)	kmjmusic	10
+(~˘▽˘)~	kmjmusic	10
+~(˘▽˘~)	kmjmusic	10
+ヾ(⌐■_■)ノ♪	kmjmusic	10
+(〜￣△￣)〜	kmjmusic	10
+(~‾▽‾)~	kmjmusic	10
+~(˘▽˘)~	kmjmusic	10
+乁( • ω •乁)	kmjmusic	10
+(｢• ω •)｢	kmjmusic	10
+⁽⁽◝( • ω • )◜⁾⁾	kmjmusic	10
+✺◟( • ω • )◞✺	kmjmusic	10
+♬♫♪◖(● o ●)◗♪♫♬	kmjmusic	10
+( ˘ ɜ˘) ♬♪♫	kmjmusic	10
+♪♪♪ ヽ(ˇ∀ˇ )ゞ	kmjmusic	10
+(ˇ▽ˇ)ノ♪♬♫	kmjmusic	10
+
+# Faces
+( ͡° ͜ʖ ͡°)	kmjface	10
+( ͡° ʖ̯ ͡°)	kmjface	10
+( ͠° ͟ʖ ͡°)	kmjface	10
+( ͡ᵔ ͜ʖ ͡ᵔ)	kmjface	10
+( . •́ _ʖ •̀ .)	kmjface	10
+( ఠ ͟ʖ ఠ)	kmjface	10
+( ͡ಠ ʖ̯ ͡ಠ)	kmjface	10
+( ಠ ʖ̯ ಠ)	kmjface	10
+( ಠ ͜ʖ ಠ)	kmjface	10
+( ಥ ʖ̯ ಥ)	kmjface	10
+( ͡• ͜ʖ ͡• )	kmjface	10
+( ･ิ ͜ʖ ･ิ)	kmjface	10
+( ͡ ͜ʖ ͡ )	kmjface	10
+(≖ ͜ʖ≖)	kmjface	10
+(ʘ ʖ̯ ʘ)	kmjface	10
+(ʘ ͟ʖ ʘ)	kmjface	10
+(ʘ ͜ʖ ʘ)	kmjface	10
+(;´༎ຶٹ༎ຶ`)	kmjface	10
+
+# Special
+٩(ˊ〇ˋ*)و	kmjchong	10
+(╯°益°)╯彡┻━┻	kmjxianzhuozi	10
+(╮°-°)╮┳━━┳ ( ╯°□°)╯ ┻━━┻	kmjxianzhuozi	10
+(ಠ_ಠ)	kmjlenny	10
+౦０o ｡ (‾́。‾́ )y~~	kmjsmoking	10
+(x(x_(x_x(O_o)x_x)_x)x)	kmjzombies	10
+(◕‿◕✿)	kmjcute	10
+_(:3 」∠)_	kmjlying	10
+∠( ᐛ 」∠)_	kmjlying	10
+‿︵‿︵‿︵‿ヽ(°□° )ノ︵‿︵‿︵‿︵	kmjdrowning	10
+｀、ヽ｀ヽ｀、ヽ(ノ＞＜)ノ ｀、ヽ｀☂ヽ｀、ヽ	kmjumbrealla	10
+(oT-T)尸	kmjsurrender	10

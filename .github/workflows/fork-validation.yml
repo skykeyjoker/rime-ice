@@ -1,0 +1,61 @@
+name: Validate Skykey branches
+
+on:
+  pull_request:
+    branches:
+      - Mac
+      - Windows
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Build and lint
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "1.22"
+          cache-dependency-path: others/script/go.sum
+
+      - name: Install lint dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.4 luarocks yamllint
+          sudo luarocks install luacheck
+
+      - name: Normalize and validate dictionaries
+        run: make -C others/script build
+
+      - name: Check generated tree is committed
+        run: git diff --exit-code
+
+      - name: Lint YAML and Lua
+        run: make -C others/script lint
+
+      - name: Check dictionary imports
+        shell: bash
+        run: |
+          missing=0
+          while read -r import; do
+            if [[ ! -f "${import}.dict.yaml" ]]; then
+              echo "Missing import: ${import}.dict.yaml"
+              missing=1
+            fi
+          done < <(awk '
+            /^import_tables:/ { in_imports = 1; next }
+            in_imports && /^\.\.\./ { exit }
+            in_imports && /^[[:space:]]*-[[:space:]]*/ {
+              sub(/^[[:space:]]*-[[:space:]]*/, "")
+              sub(/[[:space:]]*#.*/, "")
+              print
+            }
+          ' rime_ice.dict.yaml)
+          exit "$missing"

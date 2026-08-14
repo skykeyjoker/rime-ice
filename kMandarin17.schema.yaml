@@ -1,0 +1,19 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: kMandarin17
+  name: Unicode 17 kMandarin（维护构建方案）
+  version: "17.0.0"
+  author:
+    - Unicode Consortium
+    - Skykey (reproducible Rime conversion)
+  description: |
+    Unicode 17.0.0 Unihan kMandarin zh-Hans primary readings.
+    Maintenance-only schema for rebuilding kMandarin17.reverse.bin explicitly.
+
+translator:
+  dictionary: kMandarin17
+  enable_sentence: false
+  enable_completion: false
+  enable_user_dict: false

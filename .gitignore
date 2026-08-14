@@ -4,12 +4,24 @@
 dist/
 
 build/
+!build/
+build/*
+!build/.gitkeep
+!build/kMandarin17.reverse.bin
+!build/radical_reading_supplement.reverse.bin
 sync/
 *.userdb/
 installation.yaml
 user.yaml
 *.custom.yaml
+!default.custom.yaml
+!rime_ice.custom.yaml
 !others/**/*.custom.yaml
+
+# Runtime-only model and asynchronous cloud-pinyin state.
+*.gram
+cloud_pinyin_async_helper
+cloud_pinyin_async.{request,response,heartbeat,log,lock,bridge}
 
 custom_phrase_double.txt
 others/script/scel2txt/out/*

@@ -1,0 +1,60 @@
+# Skykey full Rime Ice configuration shared by macOS and Windows.
+# Frontend-specific cloud helpers are installed separately on each platform.
+patch:
+  "schema/name": "雾凇拼音 · Skykey"
+
+  # Use the upstream Rime Ice dictionary plus the cross-platform extensions.
+  "translator/dictionary": rime_ice
+  "translator/user_dict": rime_ice
+
+  # Make numeric-keypad Enter commit raw pinyin like the main Return key.
+  "key_binder/bindings/@next": { when: composing, accept: KP_Enter, send: Return }
+
+  # Asynchronous cloud pinyin. Network requests stay in the external helper.
+  "engine/processors/@before 0": lua_processor@*cloud_pinyin_async*processor
+  "engine/translators/@before last": lua_translator@*cloud_pinyin_async*translator
+  # Run cloud insertion before ranking-changing filters, then mark model
+  # sentences without restoring the user-dictionary asterisk.
+  "engine/filters/@before 0": lua_filter@*cloud_pinyin_async*filter
+  "engine/filters/@before 1": lua_filter@*model_candidate_marker
+
+  # Public phrases are shared through Git; private phrases stay per device.
+  "custom_phrase/user_dict": custom_phrase_shared
+  "engine/translators/@next": table_translator@custom_phrase_local
+  custom_phrase_local:
+    dictionary: ""
+    user_dict: custom_phrase_user
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 100
+
+  # Unicode 17 readings first, audited Unicode/CNS supplement second, n/a last.
+  "radical_lookup/prefix": "uU"
+  "radical_reverse_lookup/dictionary": kMandarin17
+  "engine/filters/@before last": lua_filter@*radical_comment_fallback
+  "recognizer/patterns/radical_lookup": "^uU[a-z]+$"
+
+  # Preserve the existing Wanxiang LTS behavior and the visible infinity mark.
+  grammar:
+    language: wanxiang-lts-zh-hans
+    non_collocation_penalty: -4
+    collocation_max_length: 5
+    collocation_min_length: 2
+    collocation_penalty: -14
+  "translator/contextual_suggestions": true
+  "translator/max_homophones": 4
+  "translator/max_homographs": 2
+
+  cloud_pinyin_async:
+    delay_ms: 300
+    timeout_ms: 1200
+    candidates_per_source: 5
+    max_candidates: 5
+    insert_after: 2
+    min_input_length: 2
+    learn_to_user_dict: true
+    refill_on_duplicate: true
+    refill_delay_ms: 100
+    refill_candidates_per_source: 10
+    refill_max_candidates: 20

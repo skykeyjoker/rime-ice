@@ -1,0 +1,118 @@
+name: Sync and monitor upstreams
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: upstream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync Rime Ice and open review requests
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Mac branch
+        uses: actions/checkout@v6
+        with:
+          ref: Mac
+          fetch-depth: 0
+
+      - name: Fast-forward pristine main from fork parent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/merge-upstream" \
+            -f branch=main > "${RUNNER_TEMP}/merge-upstream.json"
+          cat "${RUNNER_TEMP}/merge-upstream.json"
+
+      - name: Open main to Mac review PR when needed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin main Mac --prune
+          ahead=$(git rev-list --count origin/Mac..origin/main)
+          if [[ "$ahead" -eq 0 ]]; then
+            echo "Mac already contains all commits from main."
+            exit 0
+          fi
+
+          existing=$(gh pr list --repo "$GITHUB_REPOSITORY" \
+            --base Mac --head main --state open --json number --jq '.[0].number // empty')
+          if [[ -n "$existing" ]]; then
+            echo "Review PR #${existing} already tracks main -> Mac."
+            exit 0
+          fi
+
+          gh pr create --repo "$GITHUB_REPOSITORY" --base Mac --head main \
+            --title "chore(upstream): review latest Rime Ice changes" \
+            --body-file AGENT_UPSTREAM_UPDATE.md
+
+      - name: Open Mac to Windows review PR when needed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! git ls-remote --exit-code --heads origin Windows >/dev/null 2>&1; then
+            echo "Windows branch does not exist yet."
+            exit 0
+          fi
+
+          git fetch origin Mac Windows --prune
+          ahead=$(git rev-list --count origin/Windows..origin/Mac)
+          if [[ "$ahead" -eq 0 ]]; then
+            echo "Windows already contains all commits from Mac."
+            exit 0
+          fi
+
+          existing=$(gh pr list --repo "$GITHUB_REPOSITORY" \
+            --base Windows --head Mac --state open --json number --jq '.[0].number // empty')
+          if [[ -n "$existing" ]]; then
+            echo "Review PR #${existing} already tracks Mac -> Windows."
+            exit 0
+          fi
+
+          gh pr create --repo "$GITHUB_REPOSITORY" --base Windows --head Mac \
+            --title "chore(windows): review latest Mac baseline" \
+            --body "Review the shared changes with AGENT_UPSTREAM_UPDATE.md, preserve the Windows cloud-pinyin Lua adapter, then run WINDOWS_MIGRATION.md on a real Weasel installation."
+
+      - name: Monitor migrated Rime Frost dictionaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          baseline=$(awk -F': ' '$1 == "frost_master" {gsub(/"/, "", $2); print $2}' \
+            .upstream/agent-reviewed.yaml)
+          current=$(git ls-remote https://github.com/gaboolic/rime-frost.git \
+            refs/heads/master | awk '{print $1}')
+          if [[ -z "$baseline" || -z "$current" || "$baseline" == "$current" ]]; then
+            echo "No unreviewed Rime Frost dictionary reference update."
+            exit 0
+          fi
+
+          title="Review migrated Rime Frost dictionary updates"
+          body=$(cat <<EOF
+          The secondary Rime Frost reference changed:
+
+          - reviewed: \`${baseline}\`
+          - current: \`${current}\`
+
+          Only review the six migrated dictionaries and \`cn_dicts_cell/\`.
+          Do not import Frost schema, Lua, OpenCC, or ranking configuration.
+          Follow \`AGENT_UPSTREAM_UPDATE.md\` and update
+          \`.upstream/agent-reviewed.yaml\` only after a recorded decision.
+          EOF
+          )
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search "${title} in:title" --json number --jq '.[0].number // empty')
+          if [[ -n "$existing" ]]; then
+            gh issue edit "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          fi
