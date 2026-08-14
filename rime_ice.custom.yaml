@@ -43,6 +43,8 @@ patch:
   "translator/contextual_suggestions": true
   "translator/max_homophones": 4
   "translator/max_homographs": 2
+  # Do not let long dictionary entries complete beyond the typed syllables.
+  "translator/enable_word_completion": false
 
   cloud_pinyin_async:
     delay_ms: 300

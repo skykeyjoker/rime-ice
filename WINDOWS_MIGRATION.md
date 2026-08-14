@@ -16,6 +16,7 @@ Fork 的雾凇拼音，并接入万象 LTS 和异步云拼音。目标平台为 
 - 保留小狼毫字体、字号、主题、布局和候选数量；
 - 使用雾凇原生主词典，同时直接导入腾讯、六套迁移词库和全部 23 套细胞词库；
 - 启用最新万象 LTS 简体模型，整句候选显示 `∞`；
+- 关闭词语自动补全，输入的音节不会被更长词条自动补出额外后缀；
 - 云候选由独立 helper 异步查询，显示 `☁搜`、`☁谷` 或 `☁搜谷`，默认位于两个
   本地/模型候选之后；
 - `uU` 拆字依次查询 Unicode 17、审计补充库，最后显示 `n/a`；
@@ -29,8 +30,9 @@ Fork 的雾凇拼音，并接入万象 LTS 和异步云拼音。目标平台为 
    未设置时才使用 `%APPDATA%\Rime`。
 3. 写入前正常退出小狼毫，并确认 `WeaselServer` 不再运行。
 4. 完整 ZIP 必须位于用户目录和 Git 仓库之外，能够打开且条目数大于 0。
-5. `rime_frost.userdb` 不能改名成 `rime_ice.userdb`；必须通过
-   `rime_dict_manager.exe` 的文本导出/导入接口合并。
+5. `rime_frost.userdb` 不能改名成 `rime_ice.userdb`；必须通过 librime levers
+   文本接口导出/导入，本仓库使用 `scripts/rime_userdb_tool.py` 调用已安装的
+   `rime.dll`。
 6. 不向公开仓库提交 `installation.yaml`、`user.yaml`、`sync/`、`*.userdb/`、
    `custom_phrase_user*`、模型、helper 或云拼音运行文件。
 7. 不对用户目录、用户主目录、盘符根目录或通配路径执行递归删除。迁移使用改名
@@ -39,7 +41,8 @@ Fork 的雾凇拼音，并接入万象 LTS 和异步云拼音。目标平台为 
 ## 前置条件
 
 - 小狼毫已安装并包含 `librime-lua`；
-- PowerShell 5.1 或更高版本、Git、可用的 .NET Framework 4.x C# 编译器；
+- PowerShell 5.1 或更高版本、Git、Python 3.8+、可用的 .NET Framework 4.x
+  C# 编译器；
 - 建议至少 4 GB 空闲空间，用于 Git 仓库、完整 ZIP、旧目录留存和万象模型；
 - 网络可访问 GitHub 与 GitHub Releases；
 - 当前只验证全拼，双拼不属于这份迁移单的验收范围。
@@ -124,15 +127,22 @@ $weaselDeployer = if ($weaselServer) {
     Get-ChildItem -LiteralPath $weaselServer.DirectoryName `
       -Filter WeaselDeployer.exe -File | Select-Object -First 1
 }
-$dictManager = if ($weaselServer) {
-    Get-ChildItem -LiteralPath $weaselServer.DirectoryName `
-      -Filter rime_dict_manager.exe -File | Select-Object -First 1
+$rimeDll = if ($weaselServer) {
+    Get-Item -LiteralPath (Join-Path $weaselServer.DirectoryName 'rime.dll') `
+      -ErrorAction SilentlyContinue
 }
-$weaselServer, $weaselDeployer, $dictManager | Format-List FullName
+$python = Get-Command python.exe -ErrorAction SilentlyContinue
+$userDbTool = Get-Item -LiteralPath (Join-Path $repo 'scripts\rime_userdb_tool.py') `
+  -ErrorAction SilentlyContinue
+$weaselServer, $weaselDeployer, $rimeDll, $python, $userDbTool |
+  Format-List FullName, Source
 ```
 
-三项中任一缺失时，不要凭文件名猜另一个版本。由 Agent 查看小狼毫快捷方式、
-安装记录或实际安装包后精确定位；在找到匹配版本前停止迁移。
+五项中任一缺失时，不要猜路径或从其他版本复制 DLL。由 Agent 查看小狼毫快捷方式、
+安装记录或实际安装包后精确定位；在找到匹配版本前停止迁移。官方 Weasel 0.17.4
+安装器可能不包含 `rime_dict_manager.exe`，不要因此下载另一个版本的同名工具。
+`rime_userdb_tool.py` 直接加载与当前小狼毫同目录的 `rime.dll`，调用相同的 levers
+文本导出/导入 API，并且不会重命名或直接改写 LevelDB 文件。
 
 盘点并记录：
 
@@ -239,23 +249,26 @@ try {
 }
 ```
 
-导出旧学习库。工具从当前工作目录定位用户库，所以必须切换到 `$rimeUser`：
+导出旧学习库。仓库工具显式接收安装目录和用户目录，并输出记录数、文件大小与
+SHA-256：
 
 ```powershell
 $frostExport = Join-Path $backupRoot "rime_frost-$stamp.userdb.txt"
 $iceBeforeExport = Join-Path $backupRoot "rime_ice-before-$stamp.userdb.txt"
-Push-Location $rimeUser
-try {
-    if (Test-Path -LiteralPath (Join-Path $rimeUser 'rime_frost.userdb')) {
-        & $dictManager.FullName -e rime_frost $frostExport
-        if ($LASTEXITCODE -ne 0) { throw 'Failed to export rime_frost userdb.' }
-    }
-    if (Test-Path -LiteralPath (Join-Path $rimeUser 'rime_ice.userdb')) {
-        & $dictManager.FullName -e rime_ice $iceBeforeExport
-        if ($LASTEXITCODE -ne 0) { throw 'Failed to export rime_ice userdb.' }
-    }
-} finally {
-    Pop-Location
+$userDbCommon = @(
+  $userDbTool.FullName,
+  '--install-dir', $weaselServer.DirectoryName,
+  '--user-dir', $rimeUser
+)
+if (Test-Path -LiteralPath (Join-Path $rimeUser 'rime_frost.userdb')) {
+    & $python.Source @userDbCommon export `
+      --dict rime_frost --text-file $frostExport
+    if ($LASTEXITCODE -ne 0) { throw 'Failed to export rime_frost userdb.' }
+}
+if (Test-Path -LiteralPath (Join-Path $rimeUser 'rime_ice.userdb')) {
+    & $python.Source @userDbCommon export `
+      --dict rime_ice --text-file $iceBeforeExport
+    if ($LASTEXITCODE -ne 0) { throw 'Failed to export rime_ice userdb.' }
 }
 ```
 
@@ -348,18 +361,15 @@ if ($LASTEXITCODE -ne 0) { throw 'Initial Weasel deployment failed.' }
 将旧 Frost 学习数据导入 Ice，已有 Ice 用户库会自动合并：
 
 ```powershell
-Push-Location $rimeUser
-try {
-    if (Test-Path -LiteralPath $frostExport) {
-        & $dictManager.FullName -i rime_ice $frostExport
-        if ($LASTEXITCODE -ne 0) { throw 'Failed to import Frost learning data into Ice.' }
-    }
-    $iceAfterExport = Join-Path $backupRoot "rime_ice-after-$stamp.userdb.txt"
-    & $dictManager.FullName -e rime_ice $iceAfterExport
-    if ($LASTEXITCODE -ne 0) { throw 'Failed to verify the merged Ice userdb.' }
-} finally {
-    Pop-Location
+if (Test-Path -LiteralPath $frostExport) {
+    & $python.Source @userDbCommon import `
+      --dict rime_ice --text-file $frostExport
+    if ($LASTEXITCODE -ne 0) { throw 'Failed to import Frost learning data into Ice.' }
 }
+$iceAfterExport = Join-Path $backupRoot "rime_ice-after-$stamp.userdb.txt"
+& $python.Source @userDbCommon export `
+  --dict rime_ice --text-file $iceAfterExport
+if ($LASTEXITCODE -ne 0) { throw 'Failed to verify the merged Ice userdb.' }
 ```
 
 按“词 + 编码”比较，确认没有 Frost 独有键丢失：
@@ -421,20 +431,21 @@ Get-ChildItem -LiteralPath $rimeUser -Force -Filter 'rime_frost*'
 
 最后一条应没有输出；新用户目录中不应存在白霜源码、构建文件或用户库。
 
-从小狼毫方案菜单选择“雾凇拼音 · Skykey”，逐项测试：
+从小狼毫方案菜单选择“雾凇拼音”，逐项测试：
 
 1. 输入 `xian`，本地单字“先”应排第一；云候选默认从第 3 位开始。
 2. 输入 `chabuduojiukeyishidianhouxiabanle`，应看到带 `∞` 的本地模型整句和
    带 `☁` 的云句；选择“差不多”后，剩余拼音仍会继续产生云候选。
 3. 在长输入中确认前半段候选后再回退修改，云候选能按新输入重新出现，旧结果不串入。
-4. 输入 `fangjungen`，第一候选应包含“方均根”，证明 `shulihua` 已直接导入。
-5. 输入 `shangshangsaiji`，确认腾讯词库能给出“上上赛季”。
-6. 输入 `uUhuohuohuo`，应得到“焱 yàn、㷋 tán、燊 shēn、燚 yì、歘 chuā”；
+4. 输入 `mingtianshangwu`，首选应为“明天上午”，不能自动补成“明天上午来”。
+5. 输入 `fangjungen`，第一候选应包含“方均根”，证明 `shulihua` 已直接导入。
+6. 输入 `shangshangsaiji`，确认腾讯词库能给出“上上赛季”。
+7. 输入 `uUhuohuohuo`，应得到“焱 yàn、㷋 tán、燊 shēn、燚 yì、歘 chuā”；
    两套注音均缺失时只在 `uU` 候选显示 `n/a`。
-7. 输入 `uuid`、`cC1+1`、`kmjgx`，分别验证 UUID、计算器和颜文字。
-8. 主键盘 Enter 和数字小键盘 Enter 都能直接上屏未转换的英文拼音。
-9. 验证迁移前记录的个人词条、私有短语、候选数量、字体、主题和布局。
-10. 停止输入约 0.5 秒后出现 `☁搜`/`☁谷`，网络查询期间本地按键无卡顿。
+8. 输入 `uuid`、`cC1+1`、`kmjgx`，分别验证 UUID、计算器和颜文字。
+9. 主键盘 Enter 和数字小键盘 Enter 都能直接上屏未转换的英文拼音。
+10. 验证迁移前记录的个人词条、私有短语、候选数量、字体、主题和布局。
+11. 停止输入约 0.5 秒后出现 `☁搜`/`☁谷`，网络查询期间本地按键无卡顿。
 
 `∞` 只标记 Rime 类型为 `sentence` 的模型整句，不是所有受模型调序的普通词都会
 显示该符号。云候选与本地/用户/模型同文时，保留无云标记的本地版本。
@@ -498,6 +509,7 @@ Start-Process -FilePath $weaselServer.FullName
 - cloud helper commit：...
 - Rime 用户目录：...
 - 小狼毫 / librime 版本：...
+- 用户词典工具：`scripts/rime_userdb_tool.py` / 其他；导出、导入记录数：...
 - 备份 ZIP：...；条目数：...；大小：...
 - 万象资产更新时间 / 大小 / SHA-256：...
 - Frost 学习键：...；Ice 合并后键：...；缺失：0
