@@ -1,0 +1,15 @@
+# Rime schema
+# encoding: utf-8
+
+# Build-only dependency for the kaomoji dictionary used by rime_ice.
+schema:
+  schema_id: kaomoji
+  name: 颜文字词典（构建依赖）
+  version: "2025-04-28"
+
+translator:
+  dictionary: kaomoji
+  enable_user_dict: false
+  enable_sentence: false
+  enable_completion: false
+  enable_word_completion: false

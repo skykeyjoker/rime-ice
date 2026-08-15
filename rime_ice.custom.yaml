@@ -15,6 +15,25 @@ patch:
   # sentences without restoring the user-dictionary asterisk.
   "engine/filters/@before 0": lua_filter@*cloud_pinyin_async*filter
   "engine/filters/@before 1": lua_filter@*model_candidate_marker
+  "engine/filters/@next": lua_filter@*kaomoji_isolation
+
+  # Keep kaomoji out of normal pinyin candidates. Use kmj + full pinyin,
+  # for example kmjkaixin, to open a kaomoji-only candidate menu.
+  "engine/segmentors/@before last": affix_segmentor@kaomoji
+  "engine/translators/@before 2": script_translator@kaomoji
+  "schema/dependencies/@next": kaomoji
+  "recognizer/patterns/kaomoji": "^kmj[A-Za-z]+$"
+  kaomoji:
+    tag: kaomoji
+    dictionary: kaomoji
+    prefix: "kmj"
+    tips: "〔颜文字〕"
+    enable_user_dict: false
+    enable_sentence: false
+    enable_completion: false
+    enable_word_completion: false
+    contextual_suggestions: false
+    initial_quality: 100
 
   # Public phrases are shared through Git; private phrases stay per device.
   "custom_phrase/user_dict": custom_phrase_shared

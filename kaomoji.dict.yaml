@@ -1,0 +1,12 @@
+# Rime dictionary
+# encoding: utf-8
+
+# Standalone build entry for the kaomoji translator.
+---
+name: kaomoji
+version: "2025-04-28"
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  - cn_dicts/kaomoji
+...

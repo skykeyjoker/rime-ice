@@ -20,7 +20,10 @@ Fork 的雾凇拼音，并接入万象 LTS 和异步云拼音。目标平台为 
 - 云候选由独立 helper 异步查询，显示 `☁搜`、`☁谷` 或 `☁搜谷`，默认位于两个
   本地/模型候选之后；
 - `uU` 拆字依次查询 Unicode 17、审计补充库，最后显示 `n/a`；
-- `uuid`、日期、计算器、颜文字和数字小键盘 Enter 等能力可用；
+- 颜文字固定使用 `aoguai/rime_kaomoji_dict` 的全拼词库，通过 `kmj` + 全拼进入
+  独立候选，例如 `kmjkaixin`；普通拼音候选不混入颜文字，独立颜文字输入也不
+  发起云查询；
+- `uuid`、日期、计算器和数字小键盘 Enter 等能力可用；
 - 迁移前完整目录保存在用户目录之外的 ZIP，失败时可回滚。
 
 ## 安全边界
@@ -305,6 +308,31 @@ Copy-Item -LiteralPath `
   -Destination $build -Force
 ```
 
+颜文字不是主拼音词典的导入表，而是独立构建依赖。`Windows` 分支固定使用
+[`aoguai/rime_kaomoji_dict`](https://github.com/aoguai/rime_kaomoji_dict) 的
+`V20250428` 全拼词库（提交 `2f10ddca83f4cd87f41672442d27943f733b488f`，发布
+资产 SHA-256
+`9C78EFF0D8089A4E57C32C8F48DAE30BF5C8344FCC4B91A5A1FC1F8DDAA99126`）。确认
+下列文件均已复制：
+
+```powershell
+@(
+  'cn_dicts\kaomoji.dict.yaml',
+  'kaomoji.dict.yaml',
+  'kaomoji.schema.yaml',
+  'lua\kaomoji_isolation.lua'
+) | ForEach-Object {
+    $path = Join-Path $rimeUser $_
+    if (-not (Test-Path -LiteralPath $path)) {
+        throw "Missing kaomoji component: $path"
+    }
+}
+```
+
+`rime_ice.dict.yaml/import_tables` 中不得再次加入 `cn_dicts/kaomoji`，否则颜文字会
+回到普通拼音候选。`kaomoji_isolation` 只隐藏普通拼音中与颜文字词典重合的历史
+用户词条或其他候选，不删除、清空或重写 `rime_ice.userdb`。
+
 恢复明确的本机数据和前端配置：
 
 ```powershell
@@ -424,12 +452,20 @@ Select-String -LiteralPath $compiled -Pattern @(
   'cloud_pinyin_async',
   'dictionary: kMandarin17',
   'radical_reading_supplement',
-  'model_candidate_marker'
+  'model_candidate_marker',
+  'affix_segmentor@kaomoji',
+  'script_translator@kaomoji',
+  'lua_filter@\*kaomoji_isolation',
+  'kaomoji: "\^kmj\[A-Za-z\]\+\$"'
 )
+Get-ChildItem -LiteralPath $build -File -Filter 'kaomoji*.bin' |
+  Select-Object Name, Length, LastWriteTime
 Get-ChildItem -LiteralPath $rimeUser -Force -Filter 'rime_frost*'
 ```
 
-最后一条应没有输出；新用户目录中不应存在白霜源码、构建文件或用户库。
+颜文字应生成 `kaomoji.table.bin`、`kaomoji.prism.bin` 和
+`kaomoji.reverse.bin`。最后一条应没有输出；新用户目录中不应存在白霜源码、
+构建文件或用户库。
 
 从小狼毫方案菜单选择“雾凇拼音”，逐项测试：
 
@@ -442,7 +478,9 @@ Get-ChildItem -LiteralPath $rimeUser -Force -Filter 'rime_frost*'
 6. 输入 `shangshangsaiji`，确认腾讯词库能给出“上上赛季”。
 7. 输入 `uUhuohuohuo`，应得到“焱 yàn、㷋 tán、燊 shēn、燚 yì、歘 chuā”；
    两套注音均缺失时只在 `uU` 候选显示 `n/a`。
-8. 输入 `uuid`、`cC1+1`、`kmjgx`，分别验证 UUID、计算器和颜文字。
+8. 输入 `uuid`、`cC1+1`，分别验证 UUID 和计算器；输入 `kaixin`，普通候选中
+   不应出现颜文字，但 Emoji 和云候选仍可用；输入 `kmjkaixin`，候选应全部来自
+   颜文字词典，且等待超过云查询延迟后仍不出现 `☁搜`、`☁谷` 或 `☁搜谷`。
 9. 主键盘 Enter 和数字小键盘 Enter 都能直接上屏未转换的英文拼音。
 10. 验证迁移前记录的个人词条、私有短语、候选数量、字体、主题和布局。
 11. 停止输入约 0.5 秒后出现 `☁搜`/`☁谷`，网络查询期间本地按键无卡顿。
@@ -450,11 +488,16 @@ Get-ChildItem -LiteralPath $rimeUser -Force -Filter 'rime_frost*'
 `∞` 只标记 Rime 类型为 `sentence` 的模型整句，不是所有受模型调序的普通词都会
 显示该符号。云候选与本地/用户/模型同文时，保留无云标记的本地版本。
 
+颜文字数量没有统一的“6 个”上限，实际受词典精确匹配、脚本翻译结果和
+`menu/page_size` 共同影响。当前固定上游版本中，`kai xin` 恰有 6 条不同的精确
+词条；其他编码可能更多或更少，超过每页候选数时正常翻页。颜文字翻译器关闭了
+补全和用户学习，因此不会用其他编码补满固定数量，也不会把颜文字写入用户词典。
+
 ## 八、额外私有词库
 
-本 Fork 已包含腾讯、维基词典、网络用语、维基文库、维基百科、萌娘百科、颜文字
-和全部细胞词库，不要重复导入。只处理盘点中发现、仓库确实没有的 Windows 私有
-词库：
+本 Fork 已包含腾讯、维基词典、网络用语、维基文库、维基百科、萌娘百科和全部
+细胞词库，不要重复导入。颜文字也已随仓库提供，但必须保持独立 translator，不能
+加入主词典。只处理盘点中发现、仓库确实没有的 Windows 私有词库：
 
 1. 从 `$legacy` 读取其词典头、编码格式和原引用；
 2. 复制到明确的本地专用文件名；
