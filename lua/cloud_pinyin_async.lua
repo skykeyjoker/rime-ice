@@ -247,7 +247,9 @@ local function ensure_helper()
 end
 
 local function write_request(request_id, context_input, query_input, config, overrides)
-    ensure_helper()
+    -- Never launch a process from an input/update callback. The processor init
+    -- performs the single best-effort startup; if the helper later disappears,
+    -- local input keeps working and the next engine initialization retries.
     overrides = overrides or {}
     local file = io.open(path(REQUEST_FILE), "wb")
     if not file then

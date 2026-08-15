@@ -174,10 +174,18 @@ $cloudHelper = Join-Path $cloudRepo `
 if (-not (Test-Path -LiteralPath $cloudHelper)) {
     throw "Cloud helper build failed: $cloudHelper"
 }
+$weakNetworkTest = & (Join-Path $cloudRepo `
+  'platforms\windows\tests\weak_network_regression.ps1') `
+  -HelperPath $cloudHelper
+if ($weakNetworkTest.Result -ne 'PASS') {
+    throw 'Cloud helper weak-network regression failed.'
+}
+$weakNetworkTest | Format-List
 ```
 
 `Windows` 分支已经包含匹配小狼毫的 `lua\cloud_pinyin_async.lua`；不要用 macOS
-Lua 覆盖它。
+Lua 覆盖它。弱网测试不访问公网、不发送 `F24`：它模拟 Google worker 阻塞 10 秒，
+要求搜狗连续两次及时返回、500 ms 硬截止生效且 helper 心跳持续更新。
 
 ### 3.2 下载并校验最新万象 LTS
 
@@ -483,7 +491,12 @@ Get-ChildItem -LiteralPath $rimeUser -Force -Filter 'rime_frost*'
    颜文字词典，且等待超过云查询延迟后仍不出现 `☁搜`、`☁谷` 或 `☁搜谷`。
 9. 主键盘 Enter 和数字小键盘 Enter 都能直接上屏未转换的英文拼音。
 10. 验证迁移前记录的个人词条、私有短语、候选数量、字体、主题和布局。
-11. 停止输入约 0.5 秒后出现 `☁搜`/`☁谷`，网络查询期间本地按键无卡顿。
+11. 保持 `cloud_pinyin_async/delay_ms: 300`；停止输入约 0.3 秒后出现
+    `☁搜`/`☁谷`，网络查询期间本地按键无卡顿。
+12. 检查 `cloud_pinyin_async.log` 的最新 `helper started` 行包含
+    `scheduler=bounded-workers`。弱网或 DNS 阻塞超过 `timeout_ms` 时应出现
+    `query deadline`，但 heartbeat 仍每 2 秒前进，后续搜狗请求仍可返回；普通输入
+    路径不得反复创建 helper 进程。
 
 `∞` 只标记 Rime 类型为 `sentence` 的模型整句，不是所有受模型调序的普通词都会
 显示该符号。云候选与本地/用户/模型同文时，保留无云标记的本地版本。
