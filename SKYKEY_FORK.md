@@ -22,8 +22,10 @@ Skykey 跨平台配置。
 - 万象 LTS 模型及 `∞` 模型整句标记；
 - [Rime Cloud Pinyin Async](https://github.com/skykeyjoker/rime-cloud-pinyin-async)
   提供非阻塞的搜狗、Google 双源云候选，本地和万象候选保持优先；
-- 腾讯词向量、六套迁移词库和 23 套细胞词库直接由
+- 腾讯词向量、五套迁移词库和 23 套细胞词库直接由
   `rime_ice.dict.yaml` 导入，共用雾凇翻译器、用户词典和万象模型；
+- 颜文字使用 `aoguai/rime_kaomoji_dict` 全拼词库，通过 `kmj` + 全拼进入
+  独立候选，例如 `kmjkaixin`；普通拼音候选不会混入颜文字；
 - 公开短语 `custom_phrase_shared.txt` 跨平台同步；私有短语使用不入库的
   `custom_phrase_user` stabledb；
 - `uU` 拆字使用 Unicode 17 `kMandarin`，缺字时查询经过来源审计的
@@ -60,9 +62,12 @@ Windows 小狼毫的完整 Agent 迁移步骤位于
 
 - 雾凇拼音本体遵循仓库 [`LICENSE`](LICENSE)；更细的上游词典来源见
   [`others/docs/Credits.md`](others/docs/Credits.md)。
-- 六套迁移词库和 `cn_dicts_cell/` 来自
+- 五套迁移词库和 `cn_dicts_cell/` 来自
   [`gaboolic/rime-frost`](https://github.com/gaboolic/rime-frost)，保留为独立文件，
   方便追踪来源与更新；其中维基、萌娘百科等数据还可能受各自站点条款约束。
+- 颜文字词库来自
+  [`aoguai/rime_kaomoji_dict`](https://github.com/aoguai/rime_kaomoji_dict)，固定为
+  `V20250428` 全拼版本并保留其 MIT License；本 Fork 只调整词典名和接入方式。
 - 腾讯词向量来自 Tencent AI Lab，雾凇 Credits 标注为 CC BY 3.0。
 - `kMandarin17` 使用 Unicode 17.0.0 Unihan 数据，遵循
   [Unicode License v3](https://www.unicode.org/license.txt)。
@@ -91,5 +96,6 @@ git diff --check
 ```
 
 平台部署后还要检查 `xian` 的本地单字优先、长句 `∞`、第 3 位起的云候选、
-分段选词后剩余拼音继续触发云查询、`uUhuohuohuo`、`uuid`、`cC1+1`、
-`kmjgx`、腾讯词库和细胞词库样例。
+分段选词后剩余拼音继续触发云查询、`uUhuohuohuo`、`uuid`、`cC1+1`；
+`kaixin` 不应出现颜文字，`kmjkaixin` 应只显示颜文字且不触发云查询；最后验证
+腾讯词库和细胞词库样例。
