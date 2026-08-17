@@ -103,7 +103,8 @@ jobs:
           - reviewed: \`${baseline}\`
           - current: \`${current}\`
 
-          Only review the six migrated dictionaries and \`cn_dicts_cell/\`.
+          Only review \`cn_dicts_cell/\`; the five restored legacy Rime Ice
+          dictionaries and the independent kaomoji source are not maintained by Rime Frost.
           Do not import Frost schema, Lua, OpenCC, or ranking configuration.
           Follow \`AGENT_UPSTREAM_UPDATE.md\` and update
           \`.upstream/agent-reviewed.yaml\` only after a recorded decision.

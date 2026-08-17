@@ -10,8 +10,8 @@ Skykey 的万象、云拼音、跨平台词库、独立颜文字、学习数据�
 - 已审查的精确提交和日期标签记录在 `.upstream/agent-reviewed.yaml`。
 
 雾凇是方案、核心词典和 Lua 的唯一主上游。白霜只用于检查本 Fork 已迁入的
-五套词库与 `cn_dicts_cell/` 是否有值得吸收的数据更新；不要从白霜复制 schema、
-Lua、OpenCC 或候选排序配置。
+`cn_dicts_cell/` 是否有值得吸收的数据更新；五套恢复的雾凇历史词库和独立颜文字
+不由白霜维护。不要从白霜复制 schema、Lua、OpenCC 或候选排序配置。
 
 ## 分支约束
 
@@ -89,15 +89,12 @@ git fetch --no-tags https://github.com/gaboolic/rime-frost.git \
   +refs/heads/master:refs/remotes/audit/rime-frost
 FROST_NEW=$(git rev-parse refs/remotes/audit/rime-frost)
 git log --no-merges --date=short --format='%h %ad %s' "$FROST_OLD..$FROST_NEW"
-git diff --stat "$FROST_OLD..$FROST_NEW" -- \
-  cn_dicts/zhwiktionary.dict.yaml cn_dicts/web-slang.dict.yaml \
-  cn_dicts/zhwikisource.dict.yaml cn_dicts/zhwiki.dict.yaml \
-  cn_dicts/moegirl.dict.yaml cn_dicts_cell/
+git diff --stat "$FROST_OLD..$FROST_NEW" -- cn_dicts_cell/
 ```
 
-只对以上文件做三方审查。可采用新增、纠音、删除和词频修正，但必须保留雾凇
-词典头、导入路径和构建可用性。其他白霜变化一律记录为“超出次级参考范围”，
-不要迁入。
+只对 `cn_dicts_cell/` 做三方审查。可采用新增、纠音、删除和词频修正，但必须保留雾凇
+词典头、导入路径和构建可用性。五套恢复的历史词库另行记录来源，不用白霜 HEAD
+判定它们是否更新。其他白霜变化一律记录为“超出次级参考范围”，不要迁入。
 
 ## 四、实施与验证
 
