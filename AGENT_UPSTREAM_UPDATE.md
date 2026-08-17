@@ -1,7 +1,7 @@
 # Agent 上游更新指引
 
 本文供 Codex 等 Agent 定期审查本 Fork。首要目标是跟随雾凇上游，同时保护
-Skykey 的万象、云拼音、跨平台词库、学习数据边界和拆字增强。
+Skykey 的万象、云拼音、跨平台词库、独立颜文字、学习数据边界和拆字增强。
 
 ## 当前基线与来源
 
@@ -10,7 +10,7 @@ Skykey 的万象、云拼音、跨平台词库、学习数据边界和拆字增�
 - 已审查的精确提交和日期标签记录在 `.upstream/agent-reviewed.yaml`。
 
 雾凇是方案、核心词典和 Lua 的唯一主上游。白霜只用于检查本 Fork 已迁入的
-六套词库与 `cn_dicts_cell/` 是否有值得吸收的数据更新；不要从白霜复制 schema、
+五套词库与 `cn_dicts_cell/` 是否有值得吸收的数据更新；不要从白霜复制 schema、
 Lua、OpenCC 或候选排序配置。
 
 ## 分支约束
@@ -28,7 +28,8 @@ iDvel/rime-ice main -> fork main -> PR -> Mac -> PR -> Windows
 
 | 能力 | 锚点 | 验收要求 |
 | --- | --- | --- |
-| 雾凇主方案 | `rime_ice.schema.yaml`、`rime_ice.dict.yaml` | 保持雾凇组件和核心词频；保留腾讯、六套迁移词库及 23 套细胞词库的直接导入 |
+| 雾凇主方案 | `rime_ice.schema.yaml`、`rime_ice.dict.yaml` | 保持雾凇组件和核心词频；保留腾讯、五套迁移词库及 23 套细胞词库的直接导入 |
+| 颜文字 | `kaomoji*`、`lua/kaomoji_isolation.lua` | 普通拼音不混入颜文字；`kmj` + 全拼使用独立翻译器且不触发云查询或用户学习 |
 | 用户学习 | `translator/user_dict: rime_ice` | 不二进制改名用户库；不恢复候选 `*`；公开仓库不包含 `*.userdb` 或 `sync/` |
 | 万象 LTS | `rime_ice.custom.yaml`、`lua/model_candidate_marker.lua` | 保持上下文建议；模型整句显示 `∞`；模型文件不提交 |
 | 云拼音 | `lua/cloud_pinyin_async.lua`、`cloud_pinyin_async` patch | 本地/模型前两位优先；分段选择、回退后继续查询；运行文件和 helper 不提交 |
@@ -91,7 +92,7 @@ git log --no-merges --date=short --format='%h %ad %s' "$FROST_OLD..$FROST_NEW"
 git diff --stat "$FROST_OLD..$FROST_NEW" -- \
   cn_dicts/zhwiktionary.dict.yaml cn_dicts/web-slang.dict.yaml \
   cn_dicts/zhwikisource.dict.yaml cn_dicts/zhwiki.dict.yaml \
-  cn_dicts/moegirl.dict.yaml cn_dicts/kaomoji.dict.yaml cn_dicts_cell/
+  cn_dicts/moegirl.dict.yaml cn_dicts_cell/
 ```
 
 只对以上文件做三方审查。可采用新增、纠音、删除和词频修正，但必须保留雾凇
@@ -136,8 +137,9 @@ cloud_pinyin_async.request/response/heartbeat/log/lock/bridge
 4. `fangjungen` 得到“方均根”，证明 `shulihua` 已导入；
 5. `uUhuohuohuo` 显示“焱 yàn、㷋 tán、燊 shēn、燚 yì、歘 chuā”；
 6. 缺少两套读音时只在 `uU` 候选显示 `n/a`；
-7. `uuid`、`cC1+1`、`kmjgx`、腾讯词库样例均可用；
-8. Fcitx5 重启后方案菜单不是空白。
+7. `uuid`、`cC1+1`、腾讯词库样例均可用；
+8. `kaixin` 不出现颜文字；`kmjkaixin` 只显示颜文字，且等待后不出现云候选；
+9. Fcitx5 重启后方案菜单不是空白。
 
 Windows 无法在 Mac 上冒充运行验证；将公共提交合并到 `Windows` 后，严格按照
 `WINDOWS_MIGRATION.md` 在真实小狼毫环境执行测试并记录“已验证/未验证”。

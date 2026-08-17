@@ -19,7 +19,6 @@ import_tables:
   - cn_dicts/zhwikisource
   - cn_dicts/zhwiki
   - cn_dicts/moegirl
-  - cn_dicts/kaomoji
 
   # 从原配置迁移的全部细胞词库。
   - cn_dicts_cell/medication
