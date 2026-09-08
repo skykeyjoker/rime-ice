@@ -1,6 +1,6 @@
 # Advance these values only after AGENT_UPSTREAM_UPDATE.md has been completed.
-reviewed_at: "2026-08-31"
-ice_main: "75e6572bebc05b49021e842949ce947882e3e4b2"
+reviewed_at: "2026-09-08"
+ice_main: "fbb516b2786e4d5444383706d13c31c2e4d10c08"
 ice_release: "2026.06.30"
 ice_release_commit: "6810e8916d160498620a16fef2135956fecbd485"
 frost_master: "328ded2ac3978c0a2b56c18b9d7ec05dd8b18130"
